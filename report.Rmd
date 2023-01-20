@@ -118,7 +118,9 @@ filter(diamonds, carat > 3)
   
 
 1. *Under "Pick a location, see the weather forecast", pick a location on the map.  Where was the point you picked near?*
-  Blue ridge shores VA is the point picked on the map.
+  Windsor VA is the point picked on the map.
+  
+  ![](location.png)
 
 1. *The last visualization on this page is a "fancy" weather chart embedded from another notebook.  Click on the 3 dots next to that chart and choose 'Download PNG'.  Insert the PNG into your report.*
 ![](fancy.png)
@@ -175,6 +177,6 @@ Another example, `count()`
 
 *Every report must list the references that you consulted while completing the assignment. If you consulted a webpage, you must include the URL.*
 
-* Insert Reference [1](https://git.cs.odu.edu/tkennedy/git-workshop/-/wikis/Git-Workshop)
-* Insert Reference [2](https://rmarkdown.rstudio.com/docs/articles/rmarkdown.html#tutorials https://www.example.com/reallyreallyreally-extra-long-URI/)
-* Insert Reference [3](https://help.tableau.com/current/guides/get-started-tutorial/en-us/get-started-tutorial-home.html)
+* Reference [1](https://git.cs.odu.edu/tkennedy/git-workshop/-/wikis/Git-Workshop)
+* Reference [2](https://rmarkdown.rstudio.com/docs/articles/rmarkdown.html#tutorials https://www.example.com/reallyreallyreally-extra-long-URI/)
+* Reference [3](https://help.tableau.com/current/guides/get-started-tutorial/en-us/get-started-tutorial-home.html)

@@ -134,10 +134,12 @@ After pressing `markSquare()`the circle converted to square in the plot
 ![](square.png)
 
 1.  *Under “Pick a location, see the weather forecast”, pick a location
-    on the map. Where was the point you picked near?* Blue ridge shores
-    VA is the point picked on the map.
+    on the map. Where was the point you picked near?* Windsor VA is the
+    point picked on the map.
 
-2.  *The last visualization on this page is a “fancy” weather chart
+![](location.png)
+
+1.  *The last visualization on this page is a “fancy” weather chart
     embedded from another notebook. Click on the 3 dots next to that
     chart and choose ‘Download PNG’. Insert the PNG into your report.*
     ![](fancy.png)
@@ -190,9 +192,9 @@ Another example, `count()`
 completing the assignment. If you consulted a webpage, you must include
 the URL.*
 
-- Insert Reference
+- Reference
   [1](https://git.cs.odu.edu/tkennedy/git-workshop/-/wikis/Git-Workshop)
-- Insert Reference
+- Reference
   [2](https://rmarkdown.rstudio.com/docs/articles/rmarkdown.html#tutorials%20https://www.example.com/reallyreallyreally-extra-long-URI/)
-- Insert Reference
+- Reference
   [3](https://help.tableau.com/current/guides/get-started-tutorial/en-us/get-started-tutorial-home.html)
