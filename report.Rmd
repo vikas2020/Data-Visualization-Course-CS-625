@@ -12,7 +12,8 @@ knitr::opts_chunk$set(echo = TRUE)
 ## Git, GitHub
 
 1. *What is your GitHub username?*
-     vikas2020
+     
+  vikas2020
 
 2. *What is the URL of your remote GitHub repo (created through Mr. Kennedy's exercises)?*
     
@@ -56,6 +57,8 @@ library(tidyverse)
 ggplot(data = mpg) + 
   geom_point(mapping = aes(x = hwy, y = cyl))
   
+![](hwyvscyl.png)
+  
   
 
 
@@ -65,23 +68,39 @@ ggplot(data = mpg) +
 
 ```r
 library(tidyverse)
-ggplot(dota = mpg) + 
+ggplot(data = mpg) + 
   geom_point(mapping = aes(x = displ, y = hwy))
+  
+  (data is mispelt as dota)
 
-fliter(mpg, cyl = 8)
+filter(mpg, cyl = 8)
 
-filter(diamond, carat > 3)
+(filter is mispelt and == should be used in place of =)
+
+filter(diamonds, carat > 3)
+(diamonds is predefined instead of diamond )
+
 ```
 
 ## Google Colab
 
 1. *What are the URLs of your Google Colab notebooks (both Python and R)?*
 
+[Google colab with python](https://colab.research.google.com/drive/1_s2xcx_PxjDrjcfyHlb_gCufFpBYipca?usp=sharing)
+
+[Google colab with R](https://colab.research.google.com/drive/1tWi3_wKnryHUR0NA4iMC2wo856_PO_1q?usp=sharing)
+
+
+
 ## Tableau
 
 *Insert your the image of your final bar chart here*
 
+![](Sales in the west.jpg)
+
 1. *What conclusions can you draw from the chart?*
+
+  Sales of table(furniture) has positive profit of 554 in 2021 in the west region. And in all other 3 regions profit is negative for table. 
 
 ## Observable and Vega-Lite
 
@@ -89,37 +108,72 @@ filter(diamond, carat > 3)
 
 1. *In the "New York City weather forecast" section, try replacing `Forecast: detailedForecast` with `Forecast: shortForecast`. Then press the blue play button  or use Shift-Return to run your change. What happens?*
 
+   The detailed forecast is **Rain likely. Cloudy, with a high near 49. Chance of precipitation is 60%.** After changing into shortForcast, it is converted to **Light Rain Likely**
+
 1. *Under the scatterplot of temperature vs. name, try replacing `markCircle()` with `markSquare()`. Then press the blue play button  or use Shift-Return to run your change. What happens? How about `markPoint()`?*
 
+  After pressing `markSquare()`the circle converted to square in the plot
+![](square.png)
+  
+
 1. *Under "Pick a location, see the weather forecast", pick a location on the map.  Where was the point you picked near?*
+  Blue ridge shores VA is the point picked on the map.
 
 1. *The last visualization on this page is a "fancy" weather chart embedded from another notebook.  Click on the 3 dots next to that chart and choose 'Download PNG'.  Insert the PNG into your report.*
+![](fancy.png)
 
 ### Charting with Vega-Lite
 
 `markCircle()`
 
 1. *Pass an option of `{ size: 200 }` to `markCircle()`.*
+
+  The size of circle increases
+![](circle.png)
+
+
+
 1. *Try `markSquare` instead of `markCircle`.*
+
+  ![](square.png)
+
+
 1. *Try `markPoint({ shape: 'diamond' })`.*
+  
+  ![](diamonds.png)
 
 `vl.x().fieldQ("Horsepower")`, ...
 
 1. *Change `Horsepower` to `Acceleration`*
+
+  ![](milesacc.png)
+
+
 1. *Swap what fields are displayed on the x- and y-axis*
+
+  ![](accmiles.png)
 
 `vl.tooltip().fieldN("Name")`
 
 1. *Change `Name` to `Origin`.*
 
+  ![](origin.png)
+
 Another example, `count()`
 
 1. *Remove the `vl.y().fieldN("Origin")` line.*
+
+  ![](remove.png)
+
+
 1. *Replace `count()` with `average("Miles_per_Gallon")`.*
+
+  ![](average.png)
 
 ## References
 
 *Every report must list the references that you consulted while completing the assignment. If you consulted a webpage, you must include the URL.*
 
-* Insert Reference 1, https://www.example.com
-* Insert Reference 2, https://www.example.com/reallyreallyreally-extra-long-URI/
+* Insert Reference [1](https://git.cs.odu.edu/tkennedy/git-workshop/-/wikis/Git-Workshop)
+* Insert Reference [2](https://rmarkdown.rstudio.com/docs/articles/rmarkdown.html#tutorials https://www.example.com/reallyreallyreally-extra-long-URI/)
+* Insert Reference [3](https://help.tableau.com/current/guides/get-started-tutorial/en-us/get-started-tutorial-home.html)
