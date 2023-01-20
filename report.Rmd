@@ -16,7 +16,7 @@ knitr::opts_chunk$set(echo = TRUE)
   vikas2020
 
 2. *What is the URL of your remote GitHub repo (created through Mr. Kennedy's exercises)?*
-    
+    `git@github.com:vikas2020/cs625.git`
 
 ## R
 
@@ -113,6 +113,7 @@ filter(diamonds, carat > 3)
 1. *Under the scatterplot of temperature vs. name, try replacing `markCircle()` with `markSquare()`. Then press the blue play button  or use Shift-Return to run your change. What happens? How about `markPoint()`?*
 
   After pressing `markSquare()`the circle converted to square in the plot
+  
 ![](square.png)
   
 

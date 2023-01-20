@@ -10,7 +10,7 @@ Jan 19, 2023
 vikas2020
 
 2.  *What is the URL of your remote GitHub repo (created through
-    Mr. Kennedy’s exercises)?*
+    Mr. Kennedy’s exercises)?* `git@github.com:vikas2020/cs625.git`
 
 ## R
 
@@ -130,6 +130,7 @@ region. And in all other 3 regions profit is negative for table.
     `markPoint()`?*
 
 After pressing `markSquare()`the circle converted to square in the plot
+
 ![](square.png)
 
 1.  *Under “Pick a location, see the weather forecast”, pick a location
