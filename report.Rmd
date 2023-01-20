@@ -1,7 +1,7 @@
 ---
-title: "HW 1, CS 625, Fall 2022"
-author: "Dr. Faryaneh Poursardar"
-date: Aug 03, 2022
+title: "HW 1, CS 625, Spring 2023"
+author: "Vikas Chhillar"
+date: Jan 19, 2023
 output: rmarkdown::github_document
 ---
 
@@ -12,8 +12,10 @@ knitr::opts_chunk$set(echo = TRUE)
 ## Git, GitHub
 
 1. *What is your GitHub username?*
+     vikas2020
 
 2. *What is the URL of your remote GitHub repo (created through Mr. Kennedy's exercises)?*
+    
 
 ## R
 
@@ -25,18 +27,36 @@ library(tidyverse)
 ## R Markdown 
 
 1. *Create a bulleted list with at least 3 items*
+ * python
+ * data mining
+ * NLP
+ * Data visualization
 
 2. *Write a single paragraph that demonstrates the use of italics, bold, bold italics, code, and includes a link. The paragraph does not have to make sense.*
 
+ Check out our *new stylish* font in the  **generator** and ***level up your social*** bios. Need` <html>` Glyphy for all the fancy fonts and cool symbols you could ever imagine.here is google [link](https://www.google.com/),to further search.
+ 
+
 3. *Create a level 3 heading*
+
+### here is the level 3 heading###
 
 ## R 
 
 #### Data Visualization Exercises
 
 1. (Q2) *How many rows are in mpg? How many columns?*
+      
+      ggplot2::mpg
+      
+      There are 234 rows and 11 column
 
 1. (Q4) *Make a scatterplot of hwy vs cyl.*
+
+ggplot(data = mpg) + 
+  geom_point(mapping = aes(x = hwy, y = cyl))
+  
+  
 
 
 #### Workflow: basics Exercises
