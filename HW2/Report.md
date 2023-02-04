@@ -155,7 +155,7 @@ I select *text facet* for *what kind of pet* and then *select dogs* then I selec
 
 Dog is selected from the kind of pet column. 
 
-![](img/q5 sort.jpg)
+![](img/q5sort.jpg)
 
 Then I sorted pets age column with number and shortest number
 
