@@ -47,7 +47,8 @@ For cleaning the dataset. I used various techniques which I learnt from the clas
 
 
 ####  (Cluster and Edit)
-First of all i used **text facet** to get order of **what kind of pet** column. because it is showing 83 choices for kind of pets. I used cluster and edit function to sort out all the columns using both the method
+First of all i used **text facet** to get order of **what kind of pet** column. because it is showing 83 choices for kind of pets.
+I used cluster and edit function to sort out all the columns using both the method
 -key collision
 -Nearest neighborhood
 
@@ -70,8 +71,9 @@ First of all i used **text facet** to get order of **what kind of pet** column. 
   After using all the keying function in key collision method.I switched to **Nearest neighbourhood method** to sort out the dataset.
 
 ![](img/sc3.jpg)
-  I used **cluster and edit function** to sort out mostly all the columns. As shown in the image, there are so many different values of golden         retriever. 
-  Also there is one Row which has 3 dogs and one cat. So I selected Edit cell.  Then I split one row into 4 rows to get the different entities for all 3 dogs and cat.
+  I used **cluster and edit function** to sort out mostly all the columns. As shown in the image, there are so many different values of golden retriever. 
+  Also there is one Row which has 3 dogs and one cat. So I selected Edit cell. 
+  Then I split one row into 4 rows to get the different entities for all 3 dogs and cat.
 
 ![](img/sc6.jpg)
 #### GREL (General Refine Expression Language) Method 
@@ -87,11 +89,14 @@ if(value==null,"Unknown",value)
 ![](img/sc7.jpg)
   
   There are different types of rodents in the data set. So I saved all of them in one category **rodents**. And specify their breed in the *pets breed* column. Similarly tortoise in the turtle category. 
-  Later I used *GREL method* to change the pets breed, in some cases their name is given as guinea pig but breed is unknown. So I changed their breed as guinea pig and all these rodents like rat,guinea pig,hamster,gerbil in one combine category *Rodents* 
+  Later I used *GREL method* to change the pets breed, in some cases their name is given as guinea pig but breed is unknown.
+  So I changed their breed as guinea pig and all these rodents like rat,guinea pig,hamster,gerbil in one combine category *Rodents* 
 
 ![](img/gpig_rodents_unknown _gpig.jpg)
   
-  I also used manual editing in some cases. like in this one the *age* is specified in the *pets breed* column and *pets age* is shown  *unknown*. Also in some cases *age* is written as *text datatype*. So it is not showing in the numerical faucet in numeric column. They all are showing in the non numeric column. so I edit that part manually for many values.
+  I also used manual editing in some cases. like in this one the *age* is specified in the *pets breed* column and *pets age* is shown  *unknown*.
+  Also in some cases *age* is written as *text datatype*. So it is not showing in the numerical faucet in numeric column. 
+  They all are showing in the non numeric column. So I edit that part manually for many values.
 
 
 ![](img/name_8years.jpg)
@@ -100,7 +105,8 @@ if(value==null,"Unknown",value)
 
 ![](img/increase_radius.jpg)
   
-  In the pets age dataset there are so many errors in the column. There are various symbols,spelling mistakes,age is given in months, weeks, years. So for that first I used a formula in **GREL** to delete all different symbols and various words. For instance  1/2 is changed with 0.5 I saved all the values with years in numeric form. I used *value.replace* to solve this. 
+  In the pets age dataset there are so many errors in the column. There are various symbols,spelling mistakes,age is given in months, weeks, years. 
+  So for that first I used a formula in **GREL** to delete all different symbols and various words. For instance  1/2 is changed with 0.5 I saved all the values with years in numeric form. I used *value.replace* to solve this. 
 
 ![](img/sort_age_year.jpg)
   
@@ -117,6 +123,7 @@ toNumber(value.replace)("months","").replace("month","").replace("mos","").repla
 
 ![](img/mnth_year.jpg)
 I also figure out some other way to make my work easy like in view column we can collapse unwanted column temporarily to make our work more efficient. Similarly desired column can be collapsed and expand either right or left side, according to user needs.
+
 Finally I downloaded the clean data csv file and history.json file.
 
 # Part-2:
