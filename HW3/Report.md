@@ -102,12 +102,12 @@ For this visualization I selected line chart and I used R software to recreate i
 
 
 ## References
-* (https://www.r-bloggers.com/2016/12/7-visualizations-you-should-learn-in-r/)
-* (https://stackoverflow.com/questions/29278153/plotting-with-ggplot2-error-discrete-value-supplied-to-continuous-scale-on-c)
-* (https://stackoverflow.com/questions/33280191/multiple-line-and-bar-chart-in-ggplot-with-geom-text-and-colours)
-* (https://stackoverflow.com/questions/33280191/multiple-line-and-bar-chart-in-ggplot-with-geom-text-and-colours)
-* (https://policyviz.com/2017/11/16/remake-stacked-column-chart/)
-* (https://policyviz.com/2018/06/07/remake-time-series-column-chart/)
-* https://www.youtube.com/watch?v=SOgQMcUcv8o
-* https://www.geeksforgeeks.org/remove-axis-labels-and-ticks-in-ggplot2-plot-in-r/
-* https://www.youtube.com/watch?v=NN5W_83N4Z4 
+* [1](https://www.r-bloggers.com/2016/12/7-visualizations-you-should-learn-in-r/)
+* [2](https://stackoverflow.com/questions/29278153/plotting-with-ggplot2-error-discrete-value-supplied-to-continuous-scale-on-c)
+* [3](https://stackoverflow.com/questions/33280191/multiple-line-and-bar-chart-in-ggplot-with-geom-text-and-colours)
+* [4](https://stackoverflow.com/questions/33280191/multiple-line-and-bar-chart-in-ggplot-with-geom-text-and-colours)
+* [5](https://policyviz.com/2017/11/16/remake-stacked-column-chart/)
+* [6](https://policyviz.com/2018/06/07/remake-time-series-column-chart/)
+* [7](https://www.youtube.com/watch?v=SOgQMcUcv8o)
+* [8](https://www.geeksforgeeks.org/remove-axis-labels-and-ticks-in-ggplot2-plot-in-r/)
+* [9](https://www.youtube.com/watch?v=NN5W_83N4Z4) 
