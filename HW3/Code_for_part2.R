@@ -24,7 +24,7 @@ ggplot(cropsdata, aes(x = Year)) +
   geom_text(x = 2012, y = 633+20, label ="Corn", color = "deepskyblue3",check_overlap=T)+
   geom_text(x = 2012, y = 567+20, label ="Soybeans", color = "darkgoldenrod1",check_overlap=T)+
   ylab(" ")+scale_y_continuous(breaks = seq(0, 1200, 200))+
-  scale_x_discrete(limits = number_years)
+  scale_x_discrete(limits = number_years) 
 
 
 
