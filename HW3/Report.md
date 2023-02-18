@@ -11,21 +11,22 @@ I used **tableau software** and **slope chart** for this visualization.
 Initially I plan to work on **vega lite** for this visualization. I learn about **vegalite** from various online resources, but after spending around 2 days and so many attempts, I was unable to complete the visualization, So finally I shifted to **Tableau**
 software for recreating this chart. 
 
-### Image and link to the original chart   
+### Original chart ###   
 
 
 ![](part1_orig.png)    
 
    
-[Link to the original chart](https://policyviz.com/2017/11/16/remake-stacked-column-chart/)     
---
-
-
+[Link to the original chart](https://policyviz.com/2017/11/16/remake-stacked-column-chart/)   
+   
+   
 **Here is the image of recreated chart**     
-
+--
 ![](part1_recreated.jpg)      
 
-
+   
+      
+      
 **Description**
 
 - First of all I download the data file. I tried to create **slope chart** with data provided in the file. but because there were *some undefined values*, so its difficult for me to create a slop chart with those values. For instance *value of year 2001* is labelled as *new owners* but *value of 2015* is *not labelled*. So I labelled them. Moreover its in excel format, So I converted it into **.csv format** to use in **tableau software**.
@@ -65,19 +66,25 @@ software for recreating this chart.
 ## Part 2
 For this visualization I selected line chart and I used R software to recreate it.
 
-### Image and link to the original chart    
+**Image and link to the original chart**    
 
 ![](part2_orig.png)
+   
+      
+      
     
+[Link to original chart ](https://camo.githubusercontent.com/ab35ad6cb1bee8c9e3a9a22a8caea8fb7e360ac2e0fdefa79d69e9a78ec54b95/68747470733a2f2f706f6c69637976697a2e636f6d2f77702d636f6e74656e742f75706c6f6164732f323031382f30362f506f6c69637956697a5f555344415f52656d616b655f4c696e655f43686172742e706e67)
     
-[Link to original chart](https://camo.githubusercontent.com/ab35ad6cb1bee8c9e3a9a22a8caea8fb7e360ac2e0fdefa79d69e9a78ec54b95/68747470733a2f2f706f6c69637976697a2e636f6d2f77702d636f6e74656e742f75706c6f6164732f323031382f30362f506f6c69637956697a5f555344415f52656d616b655f4c696e655f43686172742e706e67)
---    
     
 **Here is the image of recreated chart**
     
-    
+   
+      
+      
 ![](Rplot.jpeg)
     
+       
+       
     
 **Description**
 - For this visualization, first of all I installed required **library packages**.
