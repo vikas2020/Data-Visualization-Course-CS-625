@@ -1,15 +1,10 @@
+HW 3, CS 625, Spring 2023
+================
+Vikas Chhillar
 
 CS 625, Spring 2023
 
 
-title: "HW 3, CS 625, Spring 2023"
-author: "Vikas Chhilar"
-output: rmarkdown::github_document
----
-
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
 ## Part 1
 I used **tableau software** and **slope chart** for this visualization.
 
