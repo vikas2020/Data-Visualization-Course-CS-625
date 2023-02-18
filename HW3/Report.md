@@ -4,22 +4,27 @@ Vikas Chhillar
 
 CS 625, Spring 2023
 
-
+---
 ## Part 1
 I used **tableau software** and **slope chart** for this visualization.
 
 Initially I plan to work on **vega lite** for this visualization. I learn about **vegalite** from various online resources, but after spending around 2 days and so many attempts, I was unable to complete the visualization, So finally I shifted to **Tableau**
 software for recreating this chart. 
 
-### Image and link to the original chart
-![](part1_orig.png)
+### Image and link to the original chart   
+
+
+![](part1_orig.png)    
+
    
-[Link to the original chart](https://policyviz.com/2017/11/16/remake-stacked-column-chart/)
+[Link to the original chart](https://policyviz.com/2017/11/16/remake-stacked-column-chart/)     
+--
 
 
+**Here is the image of recreated chart**     
 
-**Here is the image of recreated chart**
-![](part1_recreated.jpg)
+![](part1_recreated.jpg)      
+
 
 **Description**
 
@@ -55,19 +60,25 @@ software for recreating this chart.
 
 * I was unable to *hide* the line and circle shape intersection point. And for that I have to disabled the overlap between these two. I tried but somehow was unable to did that. 
 
-
+---
 
 ## Part 2
 For this visualization I selected line chart and I used R software to recreate it.
 
-### Image and link to the original chart
+### Image and link to the original chart    
+
 ![](part2_orig.png)
-
+    
+    
 [Link to original chart](https://camo.githubusercontent.com/ab35ad6cb1bee8c9e3a9a22a8caea8fb7e360ac2e0fdefa79d69e9a78ec54b95/68747470733a2f2f706f6c69637976697a2e636f6d2f77702d636f6e74656e742f75706c6f6164732f323031382f30362f506f6c69637956697a5f555344415f52656d616b655f4c696e655f43686172742e706e67)
-
+--    
+    
 **Here is the image of recreated chart**
+    
+    
 ![](Rplot.jpeg)
-
+    
+    
 **Description**
 - For this visualization, first of all I installed required **library packages**.
 1 ggplot2
@@ -100,7 +111,7 @@ For this visualization I selected line chart and I used R software to recreate i
 
 * I was unable to get the *0 start point in y-axis*. Though I tried multiple times to sort this. 
 
-
+---
 ## References
 * [1](https://www.r-bloggers.com/2016/12/7-visualizations-you-should-learn-in-r/)
 * [2](https://stackoverflow.com/questions/29278153/plotting-with-ggplot2-error-discrete-value-supplied-to-continuous-scale-on-c)
@@ -111,3 +122,4 @@ For this visualization I selected line chart and I used R software to recreate i
 * [7](https://www.youtube.com/watch?v=SOgQMcUcv8o)
 * [8](https://www.geeksforgeeks.org/remove-axis-labels-and-ticks-in-ggplot2-plot-in-r/)
 * [9](https://www.youtube.com/watch?v=NN5W_83N4Z4) 
+---
