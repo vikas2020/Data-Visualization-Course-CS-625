@@ -10,7 +10,7 @@ Choose one chart from Part 1 and one chart from Part 2.  The two charts you re-c
 
 ### Part 1 - Choose one chart, can use Excel, Tableau, R, or Vega-Lite
 
-#### Line chart #1 
+#### Line chart #1  
 |<img src="https://policyviz.com/wp-content/uploads/2018/02/PolicyViz_WSJ_Remake_LineChart-1024x613.png" width="400"/>|article: [Remake: Paired Column Chart from WSJ](https://policyviz.com/2018/03/01/remake-paired-column-chart-from-wsj/)<br/>Excel data file: [PolicyViz_WSJ_Remake.xlsx](http://policyviz.com/wp-content/uploads/2018/02/PolicyViz_WSJ_Remake.xlsx)|
 |--|--|
 
