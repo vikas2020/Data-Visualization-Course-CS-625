@@ -1,0 +1,1408 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20224.22.1117.1841                               -->
+<workbook original-version='18.1' source-build='2022.4.0 (20224.22.1117.1841)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='Data (PolicyViz_BrookingsRemake)' inline='true' name='federated.02v7v5f0418jwm13er6lk07vo7hb' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='part1_data' name='excel-direct.1b527ez13hzxat10k4a9006kxdho'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/targe/Desktop/hw3/PolicyViz_BrookingsRemake.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.1b527ez13hzxat10k4a9006kxdho' name='Data' table='[Data$]' type='table'>
+          <columns gridOrigin='A1:H5:no:A1:H5:0' header='yes' outcome='6'>
+            <column datatype='string' name='OwnerType' ordinal='0' />
+            <column datatype='integer' name='Year' ordinal='1' />
+            <column datatype='integer' name='&lt;30' ordinal='2' />
+            <column datatype='integer' name='30-44' ordinal='3' />
+            <column datatype='integer' name='45-64' ordinal='4' />
+            <column datatype='integer' name='65+' ordinal='5' />
+            <column datatype='real' name='F7' ordinal='6' />
+            <column datatype='string' name='https://twitter.com/BrookingsInst/status/919024972076539905?ref_src=twsrc%5Etfw' ordinal='7' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='excel-direct.1b527ez13hzxat10k4a9006kxdho' name='Data' table='[Data$]' type='table'>
+          <columns gridOrigin='A1:H5:no:A1:H5:0' header='yes' outcome='6'>
+            <column datatype='string' name='OwnerType' ordinal='0' />
+            <column datatype='integer' name='Year' ordinal='1' />
+            <column datatype='integer' name='&lt;30' ordinal='2' />
+            <column datatype='integer' name='30-44' ordinal='3' />
+            <column datatype='integer' name='45-64' ordinal='4' />
+            <column datatype='integer' name='65+' ordinal='5' />
+            <column datatype='real' name='F7' ordinal='6' />
+            <column datatype='string' name='https://twitter.com/BrookingsInst/status/919024972076539905?ref_src=twsrc%5Etfw' ordinal='7' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Data]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:H5:no:A1:H5:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>OwnerType</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[OwnerType]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>OwnerType</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Data_CBEE11EC64D24F6E90D7A50DFDFF2EC6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Data_CBEE11EC64D24F6E90D7A50DFDFF2EC6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>&lt;30</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[&lt;30]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>&lt;30</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Data_CBEE11EC64D24F6E90D7A50DFDFF2EC6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>30-44</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[30-44]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>30-44</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Data_CBEE11EC64D24F6E90D7A50DFDFF2EC6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>45-64</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[45-64]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>45-64</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Data_CBEE11EC64D24F6E90D7A50DFDFF2EC6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>65+</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[65+]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>65+</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Data_CBEE11EC64D24F6E90D7A50DFDFF2EC6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F7</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[F7]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>F7</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Data_CBEE11EC64D24F6E90D7A50DFDFF2EC6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>https://twitter.com/BrookingsInst/status/919024972076539905?ref_src=twsrc%5Etfw</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[https://twitter.com/BrookingsInst/status/919024972076539905?ref_src=twsrc%5Etfw]</local-name>
+            <parent-name>[Data]</parent-name>
+            <remote-alias>https://twitter.com/BrookingsInst/status/919024972076539905?ref_src=twsrc%5Etfw</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Data_CBEE11EC64D24F6E90D7A50DFDFF2EC6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='integer' name='[30-44]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[45-64]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[65+]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[&lt;30]' role='measure' type='quantitative' />
+      <column caption='Owner Type' datatype='string' name='[OwnerType]' role='dimension' type='nominal' />
+      <column aggregation='Sum' datatype='integer' name='[Year]' role='dimension' type='ordinal' />
+      <_.fcp.ObjectModelTableType.true...column caption='Data' datatype='table' name='[__tableau_internal_object_id__].[Data_CBEE11EC64D24F6E90D7A50DFDFF2EC6]' role='measure' type='quantitative' />
+      <column caption='https://twitter.com/BrookingsInst/status/919024972076539905?ref src=twsrc%5Etfw' datatype='string' name='[https://twitter.com/BrookingsInst/status/919024972076539905?ref_src=twsrc%5Etfw]' role='dimension' type='nominal' />
+      <column-instance column='[30-44]' derivation='Sum' name='[sum:30-44:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[45-64]' derivation='Sum' name='[sum:45-64:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[65+]' derivation='Sum' name='[sum:65+:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[&lt;30]' derivation='Sum' name='[sum:&lt;30:qk]' pivot='key' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#296eb7'>
+              <bucket>&quot;<![CDATA[[federated.02v7v5f0418jwm13er6lk07vo7hb].[sum:<30:qk]]]>&quot;</bucket>
+            </map>
+            <map to='#91abda'>
+              <bucket>&quot;[federated.02v7v5f0418jwm13er6lk07vo7hb].[sum:45-64:qk]&quot;</bucket>
+            </map>
+            <map to='#a2a1a7'>
+              <bucket>&quot;[federated.02v7v5f0418jwm13er6lk07vo7hb].[sum:30-44:qk]&quot;</bucket>
+            </map>
+            <map to='#c9cc98'>
+              <bucket>&quot;[federated.02v7v5f0418jwm13er6lk07vo7hb].[sum:65+:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Data' id='Data_CBEE11EC64D24F6E90D7A50DFDFF2EC6'>
+            <properties context=''>
+              <relation connection='excel-direct.1b527ez13hzxat10k4a9006kxdho' name='Data' table='[Data$]' type='table'>
+                <columns gridOrigin='A1:H5:no:A1:H5:0' header='yes' outcome='6'>
+                  <column datatype='string' name='OwnerType' ordinal='0' />
+                  <column datatype='integer' name='Year' ordinal='1' />
+                  <column datatype='integer' name='&lt;30' ordinal='2' />
+                  <column datatype='integer' name='30-44' ordinal='3' />
+                  <column datatype='integer' name='45-64' ordinal='4' />
+                  <column datatype='integer' name='65+' ordinal='5' />
+                  <column datatype='real' name='F7' ordinal='6' />
+                  <column datatype='string' name='https://twitter.com/BrookingsInst/status/919024972076539905?ref_src=twsrc%5Etfw' ordinal='7' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#000000' fontsize='16'>Age of new owners</run>
+            <run>Æ&#10;</run>
+            <run fontcolor='#000000' fontname='Tableau Regular'>2001 and 2015</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Data (PolicyViz_BrookingsRemake)' name='federated.02v7v5f0418jwm13er6lk07vo7hb' />
+          </datasources>
+          <datasource-dependencies datasource='federated.02v7v5f0418jwm13er6lk07vo7hb'>
+            <column datatype='integer' name='[30-44]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[45-64]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[65+]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[&lt;30]' role='measure' type='quantitative' />
+            <column caption='Owner Type' datatype='string' name='[OwnerType]' role='dimension' type='nominal' />
+            <column aggregation='Sum' datatype='integer' name='[Year]' role='dimension' type='ordinal' />
+            <column-instance column='[OwnerType]' derivation='None' name='[none:OwnerType:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[30-44]' derivation='Sum' name='[sum:30-44:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[45-64]' derivation='Sum' name='[sum:45-64:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[65+]' derivation='Sum' name='[sum:65+:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[&lt;30]' derivation='Sum' name='[sum:&lt;30:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.02v7v5f0418jwm13er6lk07vo7hb].[:Measure Names]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.02v7v5f0418jwm13er6lk07vo7hb].[sum:30-44:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.02v7v5f0418jwm13er6lk07vo7hb].[sum:45-64:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.02v7v5f0418jwm13er6lk07vo7hb].[sum:65+:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.02v7v5f0418jwm13er6lk07vo7hb].[sum:&lt;30:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.02v7v5f0418jwm13er6lk07vo7hb].[none:OwnerType:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;New owners&quot;</bucket>
+              <bucket>&quot;All Households&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.02v7v5f0418jwm13er6lk07vo7hb].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='1' field='[federated.02v7v5f0418jwm13er6lk07vo7hb].[Multiple Values]' field-type='quantitative' fold='true' scope='rows' type='space' />
+            <format attr='width' field='[federated.02v7v5f0418jwm13er6lk07vo7hb].[Multiple Values]' value='10' />
+            <format attr='display' class='0' field='[federated.02v7v5f0418jwm13er6lk07vo7hb].[Multiple Values]' scope='rows' value='false' />
+            <format attr='display' class='1' field='[federated.02v7v5f0418jwm13er6lk07vo7hb].[Multiple Values]' scope='rows' value='false' />
+            <format attr='line-pattern-only' value='solid' />
+            <format attr='tick-color' value='#ffffff' />
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+            <format attr='line-pattern-only' scope='rows' value='solid' />
+            <format attr='stroke-color' scope='rows' value='#000000' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.02v7v5f0418jwm13er6lk07vo7hb].[none:Year:ok]' value='265' />
+            <format attr='text-format' field='[federated.02v7v5f0418jwm13er6lk07vo7hb].[Multiple Values]' value='n#,##0&quot;%&quot;;-#,##0&quot;%&quot;' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#000000' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='color' scope='cols' value='#1b1b1b' />
+            <format attr='font-size' scope='cols' value='12' />
+            <format attr='font-weight' scope='cols' value='bold' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-style' data-class='subtotal' value='solid' />
+            <format attr='border-color' data-class='subtotal' value='#000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' value='on' />
+            <format attr='line-pattern-only' value='solid' />
+            <format attr='stroke-color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+            <format attr='div-level' scope='rows' value='1' />
+            <format attr='div-level' scope='cols' value='0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <text column='[federated.02v7v5f0418jwm13er6lk07vo7hb].[:Measure Names]' />
+              <text column='[federated.02v7v5f0418jwm13er6lk07vo7hb].[Multiple Values]' />
+              <color column='[federated.02v7v5f0418jwm13er6lk07vo7hb].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='cell'>
+                <format attr='vertical-align' value='auto' />
+                <format attr='text-align' value='auto' />
+                <format attr='wrap' value='auto' />
+              </style-rule>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='match' />
+                <format attr='font-weight' value='bold' />
+                <format attr='font-size' value='11' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-cull' value='false' />
+                <format attr='mark-markers-mode' value='none' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='stroke-size' value='0' />
+                <format attr='line-visibility' value='off' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.02v7v5f0418jwm13er6lk07vo7hb].[Multiple Values]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <text column='[federated.02v7v5f0418jwm13er6lk07vo7hb].[:Measure Names]' />
+              <text column='[federated.02v7v5f0418jwm13er6lk07vo7hb].[Multiple Values]' />
+              <color column='[federated.02v7v5f0418jwm13er6lk07vo7hb].[:Measure Names]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run>&lt;</run>
+                <run>[federated.02v7v5f0418jwm13er6lk07vo7hb].[:Measure Names]</run>
+                <run>&gt;&#10;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='vertical-align' value='auto' />
+                <format attr='text-align' value='auto' />
+                <format attr='wrap' value='auto' />
+              </style-rule>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='match' />
+                <format attr='font-weight' value='bold' />
+                <format attr='font-size' value='11' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='size' value='1.2193922996520996' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-range-field' value='[federated.02v7v5f0418jwm13er6lk07vo7hb].[none:Year:ok]' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='false' />
+                <format attr='mark-labels-mode' value='range' />
+                <format attr='mark-labels-cull' value='false' />
+                <format attr='mark-transparency' value='255' />
+                <format attr='mark-markers-mode' value='none' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='stroke-size' value='0' />
+                <format attr='line-visibility' value='off' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.02v7v5f0418jwm13er6lk07vo7hb].[Multiple Values]' y-index='1'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Shape' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <text column='[federated.02v7v5f0418jwm13er6lk07vo7hb].[:Measure Names]' />
+              <text column='[federated.02v7v5f0418jwm13er6lk07vo7hb].[Multiple Values]' />
+              <color column='[federated.02v7v5f0418jwm13er6lk07vo7hb].[:Measure Names]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run>&lt;</run>
+                <run>[federated.02v7v5f0418jwm13er6lk07vo7hb].[Multiple Values]</run>
+                <run>&gt;&#10;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='vertical-align' value='auto' />
+                <format attr='text-align' value='auto' />
+                <format attr='wrap' value='auto' />
+              </style-rule>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='match' />
+                <format attr='font-weight' value='bold' />
+                <format attr='font-size' value='11' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='size' value='0.14193369448184967' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-field' value='' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='shape' value='circle' />
+                <format attr='mark-labels-cull' value='false' />
+                <format attr='mark-transparency' value='255' />
+                <format attr='mark-markers-mode' value='none' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='stroke-size' value='0' />
+                <format attr='line-visibility' value='off' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.02v7v5f0418jwm13er6lk07vo7hb].[Multiple Values] + [federated.02v7v5f0418jwm13er6lk07vo7hb].[Multiple Values])</rows>
+        <cols>([federated.02v7v5f0418jwm13er6lk07vo7hb].[none:OwnerType:nk] / [federated.02v7v5f0418jwm13er6lk07vo7hb].[none:Year:ok])</cols>
+        <mark-labels>
+          <mark-label id='0'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor y-index='1'>
+                  <x-fields y-index='1'>
+                    <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[none:OwnerType:nk]</field>
+                    <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[none:Year:ok]</field>
+                  </x-fields>
+                  <y-fields y-index='1'>
+                    <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[none:OwnerType:nk]</field>
+                  <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[none:Year:ok]</field>
+                  <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[:Measure Names]</field>
+                  <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;New owners&quot;</value>
+                <value>2015</value>
+                <value>&quot;[federated.02v7v5f0418jwm13er6lk07vo7hb].[sum:30-44:qk]&quot;</value>
+                <value>40.0</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='33' y='0.3125' />
+          </mark-label>
+          <mark-label id='1'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor y-index='1'>
+                  <x-fields y-index='1'>
+                    <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[none:OwnerType:nk]</field>
+                    <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[none:Year:ok]</field>
+                  </x-fields>
+                  <y-fields y-index='1'>
+                    <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[none:OwnerType:nk]</field>
+                  <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[none:Year:ok]</field>
+                  <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[:Measure Names]</field>
+                  <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;New owners&quot;</value>
+                <value>2001</value>
+                <value>&quot;[federated.02v7v5f0418jwm13er6lk07vo7hb].[sum:30-44:qk]&quot;</value>
+                <value>49.0</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='-34' y='-12' />
+          </mark-label>
+          <mark-label id='2'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[none:OwnerType:nk]</field>
+                    <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[none:Year:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[none:OwnerType:nk]</field>
+                  <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[none:Year:ok]</field>
+                  <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[:Measure Names]</field>
+                  <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;New owners&quot;</value>
+                <value>2001</value>
+                <value>&quot;[federated.02v7v5f0418jwm13er6lk07vo7hb].[sum:30-44:qk]&quot;</value>
+                <value>49.0</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='-46' y='0.5' />
+          </mark-label>
+          <mark-label id='3'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[none:OwnerType:nk]</field>
+                    <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[none:Year:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[none:OwnerType:nk]</field>
+                  <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[none:Year:ok]</field>
+                  <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[:Measure Names]</field>
+                  <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;New owners&quot;</value>
+                <value>2001</value>
+                <value>&quot;<![CDATA[[federated.02v7v5f0418jwm13er6lk07vo7hb].[sum:<30:qk]]]>&quot;</value>
+                <value>29.0</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='-38' y='2' />
+          </mark-label>
+          <mark-label id='4'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor y-index='1'>
+                  <x-fields y-index='1'>
+                    <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[none:OwnerType:nk]</field>
+                    <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[none:Year:ok]</field>
+                  </x-fields>
+                  <y-fields y-index='1'>
+                    <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[none:OwnerType:nk]</field>
+                  <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[none:Year:ok]</field>
+                  <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[:Measure Names]</field>
+                  <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;New owners&quot;</value>
+                <value>2001</value>
+                <value>&quot;<![CDATA[[federated.02v7v5f0418jwm13er6lk07vo7hb].[sum:<30:qk]]]>&quot;</value>
+                <value>29.0</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='-28' y='-11' />
+          </mark-label>
+          <mark-label id='5'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[none:OwnerType:nk]</field>
+                    <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[none:Year:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[none:OwnerType:nk]</field>
+                  <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[none:Year:ok]</field>
+                  <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[:Measure Names]</field>
+                  <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;New owners&quot;</value>
+                <value>2001</value>
+                <value>&quot;[federated.02v7v5f0418jwm13er6lk07vo7hb].[sum:45-64:qk]&quot;</value>
+                <value>19.0</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='-37' y='7' />
+          </mark-label>
+          <mark-label id='6'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor y-index='1'>
+                  <x-fields y-index='1'>
+                    <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[none:OwnerType:nk]</field>
+                    <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[none:Year:ok]</field>
+                  </x-fields>
+                  <y-fields y-index='1'>
+                    <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[none:OwnerType:nk]</field>
+                  <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[none:Year:ok]</field>
+                  <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[:Measure Names]</field>
+                  <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;New owners&quot;</value>
+                <value>2001</value>
+                <value>&quot;[federated.02v7v5f0418jwm13er6lk07vo7hb].[sum:45-64:qk]&quot;</value>
+                <value>19.0</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='-25' y='-6' />
+          </mark-label>
+          <mark-label id='7'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[none:OwnerType:nk]</field>
+                    <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[none:Year:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[none:OwnerType:nk]</field>
+                  <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[none:Year:ok]</field>
+                  <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[:Measure Names]</field>
+                  <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;New owners&quot;</value>
+                <value>2001</value>
+                <value>&quot;[federated.02v7v5f0418jwm13er6lk07vo7hb].[sum:65+:qk]&quot;</value>
+                <value>3.0</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='-39' y='7' />
+          </mark-label>
+          <mark-label id='8'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor y-index='1'>
+                  <x-fields y-index='1'>
+                    <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[none:OwnerType:nk]</field>
+                    <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[none:Year:ok]</field>
+                  </x-fields>
+                  <y-fields y-index='1'>
+                    <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[none:OwnerType:nk]</field>
+                  <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[none:Year:ok]</field>
+                  <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[:Measure Names]</field>
+                  <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;New owners&quot;</value>
+                <value>2001</value>
+                <value>&quot;[federated.02v7v5f0418jwm13er6lk07vo7hb].[sum:65+:qk]&quot;</value>
+                <value>3.0</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='-27' y='-13' />
+          </mark-label>
+          <mark-label id='9'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor y-index='1'>
+                  <x-fields y-index='1'>
+                    <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[none:OwnerType:nk]</field>
+                    <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[none:Year:ok]</field>
+                  </x-fields>
+                  <y-fields y-index='1'>
+                    <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[none:OwnerType:nk]</field>
+                  <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[none:Year:ok]</field>
+                  <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[:Measure Names]</field>
+                  <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;New owners&quot;</value>
+                <value>2015</value>
+                <value>&quot;[federated.02v7v5f0418jwm13er6lk07vo7hb].[sum:45-64:qk]&quot;</value>
+                <value>33.0</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='35' y='0.5625' />
+          </mark-label>
+          <mark-label id='10'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor y-index='1'>
+                  <x-fields y-index='1'>
+                    <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[none:OwnerType:nk]</field>
+                    <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[none:Year:ok]</field>
+                  </x-fields>
+                  <y-fields y-index='1'>
+                    <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[none:OwnerType:nk]</field>
+                  <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[none:Year:ok]</field>
+                  <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[:Measure Names]</field>
+                  <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;New owners&quot;</value>
+                <value>2015</value>
+                <value>&quot;<![CDATA[[federated.02v7v5f0418jwm13er6lk07vo7hb].[sum:<30:qk]]]>&quot;</value>
+                <value>15.0</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='31' y='0.625' />
+          </mark-label>
+          <mark-label id='11'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor y-index='1'>
+                  <x-fields y-index='1'>
+                    <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[none:OwnerType:nk]</field>
+                    <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[none:Year:ok]</field>
+                  </x-fields>
+                  <y-fields y-index='1'>
+                    <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[none:OwnerType:nk]</field>
+                  <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[none:Year:ok]</field>
+                  <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[:Measure Names]</field>
+                  <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;New owners&quot;</value>
+                <value>2015</value>
+                <value>&quot;[federated.02v7v5f0418jwm13er6lk07vo7hb].[sum:65+:qk]&quot;</value>
+                <value>12.0</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='29' y='0.4375' />
+          </mark-label>
+          <mark-label id='12'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[none:OwnerType:nk]</field>
+                    <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[none:Year:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[none:OwnerType:nk]</field>
+                  <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[none:Year:ok]</field>
+                  <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[:Measure Names]</field>
+                  <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;All Households&quot;</value>
+                <value>2001</value>
+                <value>&quot;[federated.02v7v5f0418jwm13er6lk07vo7hb].[sum:45-64:qk]&quot;</value>
+                <value>34.0</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='-37' y='57' />
+          </mark-label>
+          <mark-label id='13'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[none:OwnerType:nk]</field>
+                    <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[none:Year:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[none:OwnerType:nk]</field>
+                  <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[none:Year:ok]</field>
+                  <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[:Measure Names]</field>
+                  <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;All Households&quot;</value>
+                <value>2001</value>
+                <value>&quot;[federated.02v7v5f0418jwm13er6lk07vo7hb].[sum:30-44:qk]&quot;</value>
+                <value>32.0</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='-50' y='-8' />
+          </mark-label>
+          <mark-label id='14'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor y-index='1'>
+                  <x-fields y-index='1'>
+                    <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[none:OwnerType:nk]</field>
+                    <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[none:Year:ok]</field>
+                  </x-fields>
+                  <y-fields y-index='1'>
+                    <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[none:OwnerType:nk]</field>
+                  <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[none:Year:ok]</field>
+                  <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[:Measure Names]</field>
+                  <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;All Households&quot;</value>
+                <value>2001</value>
+                <value>&quot;[federated.02v7v5f0418jwm13er6lk07vo7hb].[sum:45-64:qk]&quot;</value>
+                <value>34.0</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='-30' y='4' />
+          </mark-label>
+          <mark-label id='15'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor y-index='1'>
+                  <x-fields y-index='1'>
+                    <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[none:OwnerType:nk]</field>
+                    <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[none:Year:ok]</field>
+                  </x-fields>
+                  <y-fields y-index='1'>
+                    <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[none:OwnerType:nk]</field>
+                  <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[none:Year:ok]</field>
+                  <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[:Measure Names]</field>
+                  <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;All Households&quot;</value>
+                <value>2001</value>
+                <value>&quot;[federated.02v7v5f0418jwm13er6lk07vo7hb].[sum:30-44:qk]&quot;</value>
+                <value>32.0</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='-35' y='-30' />
+          </mark-label>
+          <mark-label id='16'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[none:OwnerType:nk]</field>
+                    <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[none:Year:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[none:OwnerType:nk]</field>
+                  <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[none:Year:ok]</field>
+                  <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[:Measure Names]</field>
+                  <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;All Households&quot;</value>
+                <value>2001</value>
+                <value>&quot;[federated.02v7v5f0418jwm13er6lk07vo7hb].[sum:65+:qk]&quot;</value>
+                <value>20.0</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='-46' y='21' />
+          </mark-label>
+          <mark-label id='17'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor y-index='1'>
+                  <x-fields y-index='1'>
+                    <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[none:OwnerType:nk]</field>
+                    <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[none:Year:ok]</field>
+                  </x-fields>
+                  <y-fields y-index='1'>
+                    <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[none:OwnerType:nk]</field>
+                  <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[none:Year:ok]</field>
+                  <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[:Measure Names]</field>
+                  <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;All Households&quot;</value>
+                <value>2001</value>
+                <value>&quot;[federated.02v7v5f0418jwm13er6lk07vo7hb].[sum:65+:qk]&quot;</value>
+                <value>20.0</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='-38' y='-6' />
+          </mark-label>
+          <mark-label id='18'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor y-index='1'>
+                  <x-fields y-index='1'>
+                    <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[none:OwnerType:nk]</field>
+                    <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[none:Year:ok]</field>
+                  </x-fields>
+                  <y-fields y-index='1'>
+                    <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[none:OwnerType:nk]</field>
+                  <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[none:Year:ok]</field>
+                  <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[:Measure Names]</field>
+                  <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;All Households&quot;</value>
+                <value>2001</value>
+                <value>&quot;<![CDATA[[federated.02v7v5f0418jwm13er6lk07vo7hb].[sum:<30:qk]]]>&quot;</value>
+                <value>13.0</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='-39' y='-21' />
+          </mark-label>
+          <mark-label id='19'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[none:OwnerType:nk]</field>
+                    <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[none:Year:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[none:OwnerType:nk]</field>
+                  <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[none:Year:ok]</field>
+                  <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[:Measure Names]</field>
+                  <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;All Households&quot;</value>
+                <value>2001</value>
+                <value>&quot;<![CDATA[[federated.02v7v5f0418jwm13er6lk07vo7hb].[sum:<30:qk]]]>&quot;</value>
+                <value>13.0</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='-49' y='0' />
+          </mark-label>
+          <mark-label id='20'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor y-index='1'>
+                  <x-fields y-index='1'>
+                    <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[none:OwnerType:nk]</field>
+                    <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[none:Year:ok]</field>
+                  </x-fields>
+                  <y-fields y-index='1'>
+                    <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[none:OwnerType:nk]</field>
+                  <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[none:Year:ok]</field>
+                  <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[:Measure Names]</field>
+                  <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;All Households&quot;</value>
+                <value>2015</value>
+                <value>&quot;[federated.02v7v5f0418jwm13er6lk07vo7hb].[sum:30-44:qk]&quot;</value>
+                <value>26.0</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='36' y='0.6875' />
+          </mark-label>
+          <mark-label id='21'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor y-index='1'>
+                  <x-fields y-index='1'>
+                    <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[none:OwnerType:nk]</field>
+                    <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[none:Year:ok]</field>
+                  </x-fields>
+                  <y-fields y-index='1'>
+                    <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[none:OwnerType:nk]</field>
+                  <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[none:Year:ok]</field>
+                  <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[:Measure Names]</field>
+                  <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;All Households&quot;</value>
+                <value>2015</value>
+                <value>&quot;[federated.02v7v5f0418jwm13er6lk07vo7hb].[sum:65+:qk]&quot;</value>
+                <value>24.0</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='35' y='0' />
+          </mark-label>
+          <mark-label id='22'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor y-index='1'>
+                  <x-fields y-index='1'>
+                    <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[none:OwnerType:nk]</field>
+                    <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[none:Year:ok]</field>
+                  </x-fields>
+                  <y-fields y-index='1'>
+                    <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[none:OwnerType:nk]</field>
+                  <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[none:Year:ok]</field>
+                  <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[:Measure Names]</field>
+                  <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;All Households&quot;</value>
+                <value>2015</value>
+                <value>&quot;[federated.02v7v5f0418jwm13er6lk07vo7hb].[sum:45-64:qk]&quot;</value>
+                <value>40.0</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='38' y='2' />
+          </mark-label>
+          <mark-label id='23'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor y-index='1'>
+                  <x-fields y-index='1'>
+                    <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[none:OwnerType:nk]</field>
+                    <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[none:Year:ok]</field>
+                  </x-fields>
+                  <y-fields y-index='1'>
+                    <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[Multiple Values]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[none:OwnerType:nk]</field>
+                  <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[none:Year:ok]</field>
+                  <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[:Measure Names]</field>
+                  <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[Multiple Values]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;All Households&quot;</value>
+                <value>2015</value>
+                <value>&quot;<![CDATA[[federated.02v7v5f0418jwm13er6lk07vo7hb].[sum:<30:qk]]]>&quot;</value>
+                <value>10.0</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='38' y='0.75' />
+          </mark-label>
+        </mark-labels>
+      </table>
+      <simple-id uuid='{F9018476-759A-4989-B0E6-F34503F56E2B}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='268'>
+            <card param='[federated.02v7v5f0418jwm13er6lk07vo7hb].[:Measure Names]' show-morefewerbutton='false' type='filter' />
+            <card pane-specification-id='1' param='[federated.02v7v5f0418jwm13er6lk07vo7hb].[:Measure Names]' type='color' />
+            <card AVG='true' KURTOSIS='false' MAX='true' MEDIAN='true' MIN='true' QUART1='false' QUART3='false' SKEWNESS='false' STDEV='false' SUM='true' type='summary' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[:Measure Names]</field>
+            <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[none:OwnerType:nk]</field>
+            <field>[federated.02v7v5f0418jwm13er6lk07vo7hb].[none:Year:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{F8BBA189-53A1-474A-9C9D-5EDB4002F7E9}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+      TkSuQmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>
