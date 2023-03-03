@@ -11,8 +11,8 @@ For this Assignment, I used **tableau** and **excel software** for viewing and f
 
 ## Part 1
 
-“How has the weekly rate of COVID-19 cases in Virginia changed over time
-based on vaccination status?”
+**How has the weekly rate of COVID-19 cases in Virginia changed over time
+based on vaccination status?**
 
 Firstly I **download the data** and then after looking into the data 
 
@@ -103,8 +103,8 @@ My final dataset used for creating the chart:
       
 ## Part 2
 
-“For each health district in Virginia, what proportion of all 1st doses
-were of the Pfizer vaccine?”
+**For each health district in Virginia, what proportion of all 1st doses
+were of the Pfizer vaccine?**
 
 ### Attributes used
 
@@ -184,10 +184,10 @@ First of all I used the shortcut key **Alt + H O I** to fixed column width.
     
 ## Part 3
 
-Propose two questions that require data from dataset 1 and dataset 2 to
+**Propose two questions that require data from dataset 1 and dataset 2 to
 be combined to answer. Describe what data manipulation would need to be
 done to answer each question. Sketch a chart that could be used the
-answer each question. Justify your visualization idiom choice.
+answer each question. Justify your visualization idiom choice.**
 
 ## Part 3 Question 1
 
