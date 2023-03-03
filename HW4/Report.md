@@ -148,7 +148,7 @@ First of all I used the shortcut key **Alt + H O I** to fixed column width.
 -   I added the measure names in the color palette. And then edit the colors to get the desired output 
 -   I edited the label of x-axis Y axis and title to get the proper visualization in the chart
 
-![](part 1.png)
+![](part1.png)
 
 1.  **Marks**  Bar chart
 2.  **Attributes** : percentage of first dose of vaccine which is a quantitative value attribute, 
