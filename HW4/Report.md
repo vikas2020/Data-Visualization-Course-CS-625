@@ -9,7 +9,7 @@ CS 625, Spring 2023
 
 For this Assignment, I used **tableau** and **excel software** for viewing and filtering,sorted the data.
 
-## Part 1
+## Part 1.
 
 **How has the weekly rate of COVID-19 cases in Virginia changed over time
 based on vaccination status?**
