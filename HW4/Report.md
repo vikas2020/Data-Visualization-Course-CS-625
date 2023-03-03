@@ -78,7 +78,7 @@ My final dataset used for creating the chart:
 
 
 
-#### Observations
+#### Observation
 
 1.  Unvaccinated peoples have maximum probability to get infected by the Covid 19.
 2.  Fully vaccinated peoples are least prone to the infections
@@ -159,7 +159,7 @@ First of all I used the shortcut key **Alt + H O I** to fixed column width.
 -   I edited the colors for Others and Pfizer vaccine and also I added measure values into the label so that the percentage can be shown on the chart.
 -   I edited the title, X axis and Y axis labels
 
-### Observations
+### Observation
 
 According to the data set and the visualization it's not necessary that Pfizer vaccines are much in demand. as compared to other vaccines
 -   Also there is not any certain or defined pattern, that Pfizer is used in most of the districts. Infact there is a quite balance approach between the use of vaccines of Pfizer and others
@@ -214,7 +214,7 @@ regions by using **filters**
 -   then I got a total number of vaccinated peoples for all different regions
 
 
-![](12.png)
+![](3_1northwest.png)
 
 ### Creating Chart
 
@@ -233,8 +233,9 @@ I converted the excel file into .CSV file so that I can use it into the **tablea
 -   **Attributes used**: Total number of vaccinated people(quantitative)regions()
 -   **Channels used**: Horizontal positions, color
 
+![](3part1.png)
 
-### Obeservations/Insights
+### Observation
 
 -   The number of vaccinated people in northern region were less in comparison of other four regions.
 -   The central region and the northwest region were equally distributed with respect to the number of vaccinated people.
@@ -289,8 +290,9 @@ I converted the excel file into .CSV file so that I can use it into the **tablea
 -   **Attributes used**: vaccine doses administered count(quantitative value attribute)regions(categorical key attribute)
 -   **Channels used**: vertical positions, color, labels
 
+![](3part2.png)
 
-### Obeservations/Insights
+### Observation
 
 -   The number of vaccine doses administered count in northern region were highest in comparison of other four regions.
 -   The Southwest region and the northwest region were quite close in terms of vaccine doses administered count.
