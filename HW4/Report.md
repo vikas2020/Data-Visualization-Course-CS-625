@@ -58,7 +58,7 @@ Then I created a new Excel file for the visualization with final dataset.
 
 My final dataset used for creating the chart:
 
-![](part1 final.png)
+![](part1final.png)
 
 ### Creating Chart
 
@@ -69,7 +69,7 @@ My final dataset used for creating the chart:
 -   I added the measure names in the color palette. And then edit the colors to get the desired output 
 -   I edited the label of x-axis Y axis and title to get the proper visualization in the chart
 
-![](part 1.png)
+![](part1.png)
 
 1.  **Marks**   Line
 2.  **Attributes** : Rate of Infected Cases (Quantitative
