@@ -5,7 +5,7 @@ Vikas Chhillar
 CS 625, Spring 2023
 
 
-## Software used for this assignment
+## Software used for this assignment.
    
 
 For this Assignment, I used **R studio** for creating boxplot, eCDF and histogram.
