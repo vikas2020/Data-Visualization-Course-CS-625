@@ -1,4 +1,4 @@
-HW 5 Analyzing Data Using Distribution Charts
+HW 5 Analyzing Data Using Distribution Charts.
 ================
 Vikas Chhillar
 
