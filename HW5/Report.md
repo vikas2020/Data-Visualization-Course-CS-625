@@ -6,46 +6,55 @@ CS 625, Spring 2023
 
 
 ## Software used for this assignment
+   
 
-For this Assignment, I used **R studio** for creating boxplot,eCDF and histogram.
-and **excel software** for viewing and filtering,sorted the data.
+For this Assignment, I used **R studio** for creating boxplot, eCDF and histogram.
+and **excel software** for viewing and filtering, sorted the data.
 
 ## Part 1.
 ### Working on dataset
+    
 
 The **columns were not in a readable manner**. All of them are intermingled. So I **selected whole data** with **ctrl+A**, then I used the shortcut key ```Alt + H O I```. This shortcut saved a lot of my time. Because now I don`t have to manually adjust the columns. 
 
-I used first data set for this homework.
-Firstly I **download the data**.Then after looking into the data,I found a similarity in the  data.  I use **filter** on the county column and I selected the filter to **display county with 0 value for every state**. 
-so I  i analysed that  first county of of every state has similar name as of state.And these are unwanted outliers in the dataset
-![](county0.png)
-So I calculated and found that first county of every state is actually the total sum of all counties population together in that state. I used Delaware state to show this analysis. 
+- I used data set 1 **(US Census Bureau County Population dataset (CO-EST2019-alldata))** for this homework.
+- Firstly I **download the data**.Then after looking into the data, I found a similarity in the  data.  I used **filter** on the county column and  selected the filter to **display county with 0 value for every state**. 
+- Hence analysed that  first county of every state has similar name as of state. And these  values could are unwanted outliers in the dataset.    
 
-![](delaware.png)
-![](sumcounty.png)
+![](county0.png)    
+
+- So I calculated and found that first county of every state is actually the **total sum of all counties population** together in that state. I used Delaware state to show this analysis. 
+
+![](delaware.png)    
+
+![](sumcounty.png)    
+
 
 So first I filtered out all these counties.
 
-![](withoutcounty0.png)
-Now I have total 3143 entities.
-and then created a new sheet with required columns according to question.
+![](withoutcounty0.png)    
 
-![](part1data.png)
- and then after getting the refined data. I used **R** in Rstudio for visualization.
+- Now I have total **3143** entities.
+- Then I created a new sheet with required columns according to question.
+
+![](part1data.png)    
+
+ And after getting the refined data. I used **R** in Rstudio for visualization.
  
 ### Creating Visualization 
- 
--I used class lecture and some online search to learn about how to create boxplt,eCDF and histogram in R. 
+---    
+
+- I used class lecture and some online search to learn about how to create **boxplt**, **eCDF** and **histogram** in **R**. 
 **Boxplot**
--Firstly I imported the required libraries for the visualization.
--Used read.csv function to download data to the Rstudio
--I used data.frame to get three glyphs for the three columns 
--To get all glyphs in a single chart i used rbind function
--The population values are very big, so I find the exponential values as a solution for this problem. 
--x and y axis are properly labelled and also different color pallets used to make visualization effective.
+- Firstly I imported the **required libraries** for the visualization.
+- Used **read.csv** function to download data to the Rstudio
+- I used **data.frame** to get three glyphs for the three columns 
+- To get all glyphs in a single chart i used **rbind function**
+- The population values are very big, so I find the **exponential values** as a solution for this problem. 
+- x and y axis are properly labelled and also different color pallets used to make visualization effective.
 
-Code snippet for box plot
-
+### Code snippet for box plot
+---
 ```
 # Required libraries 
 library(ggplot2) 
@@ -87,7 +96,7 @@ print(Box_glyphs)
 ![](Boxplot.png)
 
 #### Observation
-
+---
 1. By looking into the boxplot chart, all three glyphs with different data, showing quite similiar population distribution.
 2. There is a slight difference in th epopulation distribution of 2015 and 2019 between 10^2 -10^3. there is one extra outlier in 2019 population distribution.
 3.Majority of outliers are present in the counties with maximum population distribution.
@@ -97,17 +106,20 @@ print(Box_glyphs)
 7. Boxplot can give a summarized view of the distribution.In other words, it can give an idea about the whole data. Also for more precise visualization we can use some other variants of box plot also. 
 
 ---
-**eCDF**
--eCDF is Empirical cumulative distribution function 
+### eCDF    
+
+-eCDF is **Empirical cumulative distribution function** 
 -It provides an alternative visualization of distribution.
--For this visualization I used the CENSUS2010POP column for the distribution of the population of all counties in the US as of the 2010 Census.  
--The geom parameter of the stat_ecdf() function can be used to change the shape of the ECDF plot. We can add any shape as the value of parameter geom. For example, we can have a point-shaped ECDF plot made using stat_ecdf() function with the geom parameter being “point”
--I used the similar log 10 function to visualize the population range. 
--For x and y axis are properly labelled and also different color pallets used to make visualization effective.
+-For this visualization I used the **CENSUS2010POP** column for the distribution of the population of all counties in the US as of the 2010 Census.  
+-The **geom parameter of the stat_ecdf() function** can be used to change the shape of the ECDF plot. We can add any shape as the value of **parameter geom**. For example, we can have a **point-shaped ECDF plot** made using **stat_ecdf()** function with the geom parameter being **point**.
+-I used the similar **log 10 function** to visualize the **population range**. 
+-X and Y axis are properly **labelled** and also different **color pallets** used to make visualization effective.
 
 
 
-Code snippet for eCDF 
+### Code snippet for eCDF 
+---    
+
 ```
 eCDF<-ggplot(censusdata, aes(CENSUS2010POP))+stat_ecdf(geom="point", pad=FALSE, color="cyan")+
   
@@ -124,6 +136,8 @@ print(eCDF)
 
 
 #### Observation
+---    
+
 1.  This graph displays the data points from lowest to highest against their percentile range.
 2. Between 10^2 to 10^3 there are many outliers and population distribution is not dense.That`s why there is so much white space between data points.
 3. The population distribution between 10^4 and 10^6 is more dense because in this area the curve is quite strong. that means there are so many data points or we can say population distribution is high in this zone. 
@@ -131,21 +145,19 @@ print(eCDF)
 5. The eCDF curve is massively change its course of motion betwen 10^4 to 10^6. which implies it is the zone of median. and majority of the population distribution is in this zone
 
 
+### Histogram
+---    
 
+Histogram visualise the **distribution of a single continuous variable** by dividing the **x axis into bins** and counting the number of observations in each bin
 
+- For this visualization I used the **CENSUS2010POP** column for the distribution of the population of all counties in the US as of the 2010 Census.
+- I used **geom_histogram()** to display the counts with bars.
+-  **Bin size is 0.5** to get a normalize chart for the visualization.
 
-**Histogram**
-Histogram visualise the distribution of a single continuous variable by dividing the x axis into bins and counting the number of observations in each bin
+- The population values are very big, so I used the similar **log 10 function** to visualize the population range.  
+- x and y axis are properly labelled and also different color pallets used to make **visualization** effective.
 
-- For this visualization I used the CENSUS2010POP column for the distribution of the population of all counties in the US as of the 2010 Census.
-- I used geom_histogram() to display the counts with bars.
--  Bin size is 0.5 to get a normalize chart for the visualization.
-
-- The population values are very big, so I used the similar log 10 function to visualize the population range.  
-- x and y axis are properly labelled and also different color pallets used to make visualization effective.
-- For x and y axis are properly labelled and also different color pallets used to make visualization effective.
-
-Code snippet for Histogram
+#### Code snippet for Histogram
 ```
 HSGM_vis<-ggplot(censusdata, aes(x=CENSUS2010POP))+theme_bw()+geom_histogram(binwidth=0.5,color="grey", fill="seagreen")+
   
@@ -159,6 +171,7 @@ print(HSGM_vis)
 ![](hist_bin5.png)
 
 #### Observation
+---    
 
 1. Histogram is a type of bar chart that shows the frequency or number of observations within different numerical ranges, called bins. The bins are usually specified as consecutive, non-overlapping intervals of a variable.
 2. Now by looking at the histogram, it is quite evident that maximum population distribution is near the median as it is in the boxplot and the eCDF. 
@@ -172,20 +185,21 @@ print(HSGM_vis)
 
 
 ## Part 2
+   
 
-For further investigation I used histogram from part 1.
-- As we discussed if we changed the binwidth, the resulting visualization is significantly distorted. So I changed binwidth to 0.1 to see the smaller details of the dataset.
+For further investigation I used **histogram from part 1**.
+- As we discussed if we **changed the binwidth**, the resulting visualization is significantly distorted. So I changed binwidth to **0.1** to see the smaller details of the dataset.
 - Now after decreasing the binwidth the visualization is remarkably improved.
-- Now its quite easy to identify  outliers in the histogram.
-- In the previous visualization with binwidth 0.5, there is a spike in distribution at  10^4 bin zone  but in this visualization, we can see its a gradual increase in the population distribution.
-- Similarly after the median we can identify certain outliers between 10^4 - 10^5 in this visualization which are unable to detect in the previous one.
+- And its quite easy to **identify  outliers** in the histogram.
+- In the previous visualization with **binwidth 0.5,** there is a **spike in distribution at  10^4 bin zone  but in this visualization, we can see its a gradual increase in the population distribution**.
+- Similarly after the median we can identify certain outliers between **10^4 - 10^5** in this visualization which are unable to detect in the previous one.
 
 
-I created one more chart with binwidth 0.9 and again the visualization is changed with respect to bin.
+**I created one more chart with binwidth 0.9 and again the visualization is changed with respect to bin.**
 Now its looks like that the population distribution is maximum at the median and there is a steep decline in the distribution after the median.
 So we can say that they can be useful for visualizing the distribution of continuous, discrete or even unordered data. However, they also has some drawbacks like they are too much dependent on the number and position of bins, which can affect the appearance and interpretation of the graph.
 
-*Code snippet for Histogram with bin size 0.1*
+#### Code snippet for Histogram with bin size 0.1
 ```
 HSGM_vis<-ggplot(censusdata, aes(x=CENSUS2010POP))+theme_bw()+geom_histogram(binwidth=0.1,color="grey", fill="orange")+
   
@@ -198,7 +212,7 @@ print(HSGM_vis)
 ```
 ![](hist_bin1.png)
 
-*Histogram with bin size 0.9*
+#### Histogram with bin size 0.9
 
 ```
 HSTGM_vis<-ggplot(censusdata, aes(x=CENSUS2010POP))+theme_bw()+geom_histogram(binwidth=0.9,color="grey", fill="orange")+
@@ -211,7 +225,6 @@ print(HSTGM_vis)
 
 ```
 ![](hist_bin9.png)
-#### Observation
 
 ---     
 ## References
@@ -226,3 +239,4 @@ print(HSTGM_vis)
 -   [8](https://data.virginia.gov/Government/VDH-COVID-19-PublicUseDataset-Vaccines-DosesAdmini/28k2-x2rj)
 -   [9](https://wisdomanswer.com/what-is-the-advantages-and-disadvantages-of-histogram/)
 -   [10](https://towardsdatascience.com/6-reasons-why-you-should-stop-using-histograms-and-which-plot-you-should-use-instead-31f937a0a81c)
+---    
