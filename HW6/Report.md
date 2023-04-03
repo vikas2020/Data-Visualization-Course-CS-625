@@ -62,11 +62,13 @@ Because the dataset is quite big, I converted the **date into months in Tableau*
 ![](q1.png)     
 
 
-**Q2. On which date was the highest number of COVID-19 cases reported in a single day?
-    On 10 january 2022, there were 1433977 covid infection cases.** 
+**Q2. On which date was the highest number of COVID-19 cases reported in a single day?**    
 
-**Q3. On which date was the highest number of COVID-19 deaths reported in a single day?
-    On 11 november 2022, 12718 peoples were dead due to covid 19.**
+    On 10 january 2022, there were 1433977 covid infection cases.
+
+**Q3. On which date was the highest number of COVID-19 deaths reported in a single day?**     
+
+    On 11 november 2022, 12718 peoples were dead due to covid 19.
     
     
 ![](max.png)    
@@ -77,9 +79,10 @@ While analyzing the dataset, I **found some negative values** such as -2435 whic
 Now after the initial analysis and answering the questions.
     
     
-### final two questions are 
+### Final two questions are 
 
-## 1. Does the incidence of COVID-19 infections vary with different seasons?     
+## 1. Does the incidence of COVID-19 infections vary with different seasons?         
+
 
 ![](mainq1.png) 
 
@@ -104,10 +107,11 @@ Now after the initial analysis and answering the questions.
 #### Observation
 ---
 After analyzing the data, I can **conclude** that the number of COVID **infections and deaths increased during the winter season and gradually decreased with the summer season.** Moreover, COVID infections and deaths are at their **lowest during the summer season**. Therefore, we can say that COVID cases are **more prominent** during the **winter season** than the summer season. This finding is consistent with previous studies that have shown that **respiratory viruses** such as COVID-19 are more **prevalent during the winter months** due to factors such as **low humidity levels and cold temperatures**.
+---
 
 
+## 2. Is there a direct correlation between the rise in COVID-19 cases and the rise in deaths of infected individuals?    
 
-## 2. Is there a direct correlation between the rise in COVID-19 cases and the rise in deaths of infected individuals?
 
 ![](mainq2.png) 
 
