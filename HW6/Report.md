@@ -25,12 +25,14 @@ For the **initial exploration**, I have selected the **Coronavirus (COVID-19) Da
 
 ### Choose a dataset
 **Dataset Selected** :  Coronavirus (Covid-19) Data in the United States, New York Times - https://github.com/nytimes/covid-19-data.
+---    
 
 This dataset contains **1159 rows and 3 columns.** 
 - Date ( From 21st january 2020 to 23rd january 2023 ) 
 - Cases (Total number of cases)
 - Death. (Total number of death)      
-
+     
+     
 ![](download.png)
 
 ## Step 2: Start the EDA Process
@@ -41,31 +43,42 @@ After analyzing the data, I determined that for the **initial visualization**, I
 - Case per date
 - Death per date
 
-**I freeze the title pane of my dataset’s first row containing the names of all columns. This way, I can still keep track of the title of my column while scrolling through the dataset**.
+**I freeze the title pane of my dataset’s first row containing the names of all columns. This way, I can still keep track of the title of my column while scrolling through the dataset**.    
+
 
 ![](maindata.png)
 
-Now the first question that comes to mind is: 
+Now the first question that comes to mind is:     
 
-**Q1. What are the total number of cases and total number of deaths?
-   Total case till March 2023 = 103,910,034
-   Total Covid deaths till march 2023 = 1,128,090**
 
-Because the dataset is quite big, I converted the **date into months in Tableau** for better visualization.
+**Q1. What are the total number of cases and total number of deaths?**    
 
-![](q1.png)    
+   Total case till March 2023 = 103,910,034    
+   
+   Total Covid deaths till march 2023 = 1,128,090
+
+Because the dataset is quite big, I converted the **date into months in Tableau** for better visualization.    
+
+
+![](q1.png)     
+
 
 **Q2. On which date was the highest number of COVID-19 cases reported in a single day?
     On 10 january 2022, there were 1433977 covid infection cases.** 
 
 **Q3. On which date was the highest number of COVID-19 deaths reported in a single day?
     On 11 november 2022, 12718 peoples were dead due to covid 19.**
-        
+    
+    
 ![](max.png)    
-
+    
+    
 While analyzing the dataset, I **found some negative values** such as -2435 which **appear to be mistakes in the dataset**. these errors are visible in the negative side of X axis in the visualization. Upon further investigation, I found that there were **errors in four rows**, specifically rows 502, 785, 993, and 1148.
 
-Now after the initial analysis and answering the questions. So **final two questions are** 
+Now after the initial analysis and answering the questions.
+    
+    
+### final two questions are 
 
 ## 1. Does the incidence of COVID-19 infections vary with different seasons?     
 
@@ -84,9 +97,11 @@ Now after the initial analysis and answering the questions. So **final two quest
 - Annotated the **marks** with matching color of the chart.
 - Labeled the **X and Y axis**.
 - Wrote a **title and subtitle** for the visualization.
-
+    
+    
 ![](dualaxis2.png) 
-
+    
+    
 #### Observation
 ---
 After analyzing the data, I can **conclude** that the number of COVID **infections and deaths increased during the winter season and gradually decreased with the summer season.** Moreover, COVID infections and deaths are at their **lowest during the summer season**. Therefore, we can say that COVID cases are **more prominent** during the **winter season** than the summer season. This finding is consistent with previous studies that have shown that **respiratory viruses** such as COVID-19 are more **prevalent during the winter months** due to factors such as **low humidity levels and cold temperatures**.
