@@ -54,18 +54,19 @@ Because the dataset is quite big, I converted the date into months in Tableau fo
 ![](q1.png)    
 
 Q2. On which date was the highest number of COVID-19 cases reported in a single day?
+    On 10 january 2022, there were 1433977 covid infection cases. 
 
 Q3. On which date was the highest number of COVID-19 deaths reported in a single day?
+    On 11 november 2022, 12718 peoples were dead due to covid 19.
         
 ![](max.png)    
 
-While analyzing the dataset, I found some negative values such as -2435 which appear to be mistakes in the dataset. Upon further investigation, I found that there were errors in four rows, specifically rows 502, 785, 993, and 1148.
-
-![](.png) 
+While analyzing the dataset, I found some negative values such as -2435 which appear to be mistakes in the dataset. these errors are visible in the negative side of X axis in the visualization. Upon further investigation, I found that there were errors in four rows, specifically rows 502, 785, 993, and 1148.
 
 Now after the initial analysis and answering the questions. So final two questions are 
 
-1 Does the incidence of COVID-19 infections vary with different seasons?
+## 1. Does the incidence of COVID-19 infections vary with different seasons?     
+
 ![](mainq1.png) 
 
  
@@ -76,30 +77,47 @@ Now after the initial analysis and answering the questions. So final two questio
 - Summarized the date into months in the visualization to obtain the total number of cases and deaths of the complete dataset in a specific month.
 - Annotated the marks with the highest and lowest value and matched the annotation color with the charts.
 - Used dual axis for better visualization and repeated the steps done before.
+- Used line charts for total death per month.
+- Used bar charts for total cases per month.
+- Annotated the marks with matching color of the chart.
+- Labeled the X and Y axis.
+- Wrote a title and subtitle for the visualization.
 
 ![](dualaxis2.png) 
 
 #### Observation
 ---
-After analysing the data i can say that covid infection and number of death increased during the winter season and gradually decrease with the summer season. and covid infection and deaths are at lowest during the summer season. so we can say that Covid cases are more prominant during the winter season then summer season.
+After analyzing the data, I can conclude that the number of COVID infections and deaths increased during the winter season and gradually decreased with the summer season. Moreover, COVID infections and deaths are at their lowest during the summer season. Therefore, we can say that COVID cases are more prominent during the winter season than the summer season. This finding is consistent with previous studies that have shown that respiratory viruses such as COVID-19 are more prevalent during the winter months due to factors such as low humidity levels and cold temperatures.
 
 
 
-2. Is there a direct correlation between the rise in COVID-19 cases and the rise in deaths of infected individuals?
+## 2. Is there a direct correlation between the rise in COVID-19 cases and the rise in deaths of infected individuals?
 
 ![](mainq2.png) 
+
 ### Creating Visualization in Tableau 
 ---   
 
--It provides an alternative visualization of distribution.
--For this visualization I used the **CENSUS2010POP** column for the distribution of the population of all counties in the US as of the 2010 Census.  
--The **geom parameter of the stat_ecdf() function** can be used to change the shape of the ECDF plot. We can add any shape as the value of **parameter geom**. For example, we can have a **point-shaped ECDF plot** made using **stat_ecdf()** function with the geom parameter being **point**.
--I used the similar **log 10 function** to visualize the **population range**. 
--X and Y axis are properly **labelled** and also different **color pallets** used to make visualization effective.
+- Downloaded the **maindata.csv** file for visualization purposes.
+- Converted the **date into months** to improve visualization.
+- Used months data on the x-axis to make visualization feasible because date data is very large.
+- Used bar charts to visualize cases per month from 2020 to 2023.
+- Used bar charts to visualize COVID deaths per month from 2020 to 2023.
+- Annotated the marks with the highest COVID cases and the correlated COVID deaths in that area.
+- Annotated the highest COVID death and the correlated COVID cases in that area.
+- Used color to differentiate different years within the charts.
+- Defined the legends (Year of date).
+- Used dual axis for better visualization and repeated the steps done before.
+- Used line charts for total death per month.
+- Used bar charts for total cases per month.
+- Annotated the marks with matching color of the chart.
+- Labeled the X and Y axis.
+- Wrote a title and subtitle for the visualization.
 
 ![](dualaxis.png) 
 #### Observation
----    
+---  
+
 
 
 
