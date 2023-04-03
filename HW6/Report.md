@@ -48,6 +48,8 @@ I freeze the title pane of my dataset’s first row containing the names of all 
 Now the first question that comes to mind is: 
 
 Q1. What are the total number of cases and total number of deaths?
+   Total case till March 2023 = 103,910,034
+   Total Covid deaths till march 2023 = 1,128,090
 
 Because the dataset is quite big, I converted the date into months in Tableau for better visualization.
 
@@ -118,9 +120,7 @@ After analyzing the data, I can conclude that the number of COVID infections and
 #### Observation
 ---  
 
-
-
-
+As we can see in the visualization that in january, 2021  covid cases were 6,196,874 and covid deaths were 95,249. but in january 2022 covid cases were increases to 20,300,128 but the covid deaths reduced to 61,607. so We can assume that there is no direct correlation between the rise in COVID-19 cases and the rise in deaths of infected individuals. While there is a correlation between the two, it is not a direct one. The severity of COVID-19 cases can vary greatly, and some people may experience mild symptoms while others may experience severe symptoms that can lead to death. Additionally, there are many factors that can contribute to the severity of COVID-19 cases, including age, underlying health conditions, and access to healthcare. A person can develop immunity from COVID-19 following vaccination, natural infection, or a combination of both. The immune system produces antibodies in response to the SARS-CoV-2 virus or COVID-19 vaccines. A new report shows that 90% of people who recover from COVID-19 infections keep a stable overall antibody response.
 
 
 
