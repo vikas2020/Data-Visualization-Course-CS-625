@@ -106,7 +106,7 @@ Now after the initial analysis and answering the questions. So final two questio
 -I used the similar **log 10 function** to visualize the **population range**. 
 -X and Y axis are properly **labelled** and also different **color pallets** used to make visualization effective.
 
-
+![](dualaxis.png) 
 #### Observation
 ---    
 
