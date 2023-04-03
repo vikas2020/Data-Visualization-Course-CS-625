@@ -127,13 +127,13 @@ As we can see in the visualization that in **january, 2021  covid cases were 6,1
 ---     
 ## References
 
--   [1](https://www.vdh.virginia.gov/content/uploads/sites/182/2020/08/VA-regions_districts_localities.pdf)
--   [2](https://ggplot2.tidyverse.org/reference/geom_boxplot.html?q=boxplot#null)
--   [3](https://ggplot2.tidyverse.org/reference/geom_histogram.html?q=histogram#null)
--   [4](https://ggplot2.tidyverse.org/reference/stat_ecdf.html?q=eCDF#ref-examples?q=histigram#undefined?q=histgram#undefined)
--   [5](https://www.youtube.com/watch?v=iI8RA6fjxNg)
+-   [1](https://github.com/nytimes/covid-19-data)
+-   [2](https://coronavirus.jhu.edu/)
+-   [3](https://www.cdc.gov/)
+-   [4](https://www.who.int/health-topics/coronavirus#tab=tab_1)
+-   [5](https://www.youtube.com/shorts/VzYdVbFT3aY)
 -   [6](https://data.virginia.gov/dataset/VDH-COVID-19-PublicUseDataset-Cases-by-Vaccination/vsrk-d6hx)
--   [7](https://www.youtube.com/watch?v=Xe4U_-o_EWw)
--   [8](https://data.virginia.gov/Government/VDH-COVID-19-PublicUseDataset-Vaccines-DosesAdmini/28k2-x2rj)
--   [9](https://wisdomanswer.com/what-is-the-advantages-and-disadvantages-of-histogram/)
--   [10](https://towardsdatascience.com/6-reasons-why-you-should-stop-using-histograms-and-which-plot-you-should-use-instead-31f937a0a81c)
+-   [7](https://www.youtube.com/shorts/VzYdVbFT3aY)
+-   [8](https://www.theguardian.com/world/2022/jun/14/people-who-caught-covid-in-first-wave-get-no-immune-boost-from-omicron)
+-   [9](https://help.tableau.com/current/online/en-us/web_author.htm?source=productlink)
+-   [10](https://www.youtube.com/watch?v=z4mLwELziNg)
