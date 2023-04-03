@@ -41,21 +41,23 @@ After analyzing the data, I determined that for the initial visualization, I nee
 - Case per date
 - Death per date
 
+I freeze the title pane of my dataset’s first row containing the names of all columns. This way, I can still keep track of the title of my column while scrolling through the dataset.
+
 ![](maindata.png)
 
 Now the first question that comes to mind is: 
 
 Q1. What are the total number of cases and total number of deaths?
 
-Because the dataset is quite big, I converted the date into months in Tableau for visualization.
+Because the dataset is quite big, I converted the date into months in Tableau for better visualization.
 
 ![](q1.png)    
 
 Q2. On which date was the highest number of COVID-19 cases reported in a single day?
 
-![](.png)     
-
 Q3. On which date was the highest number of COVID-19 deaths reported in a single day?
+        
+![](max.png)    
 
 While analyzing the dataset, I found some negative values such as -2435 which appear to be mistakes in the dataset. Upon further investigation, I found that there were errors in four rows, specifically rows 502, 785, 993, and 1148.
 
@@ -69,37 +71,26 @@ Now after the initial analysis and answering the questions. So final two questio
  
 ### Creating Visualization in Tableau 
 ---    
-
-- I used class lecture and some online search to learn about how to create **boxplt**, **eCDF** and **histogram** in **R**. 
-**Boxplot**
-- Firstly I imported the **required libraries** for the visualization.
-- Used **read.csv** function to download data to the Rstudio
-- I used **data.frame** to get three glyphs for the three columns 
-- To get all glyphs in a single chart i used **rbind function**
-- The population values are very big, so I find the **exponential values** as a solution for this problem. 
-- x and y axis are properly labelled and also different color pallets used to make visualization effective.
+- Downloaded the **maindata.csv** file for visualization purposes.
+- Converted the **date into months** to improve visualization.
+- Summarized the date into months in the visualization to obtain the total number of cases and deaths of the complete dataset in a specific month.
+- Annotated the marks with the highest and lowest value and matched the annotation color with the charts.
+- Used dual axis for better visualization and repeated the steps done before.
 
 ![](dualaxis2.png) 
 
 #### Observation
 ---
-1. By looking into the boxplot chart, all three glyphs with different data, showing quite similiar population distribution.
-2. There is a slight difference in th epopulation distribution of 2015 and 2019 between 10^2 -10^3. there is one extra outlier in 2019 population distribution.
-3.Majority of outliers are present in the counties with maximum population distribution.
-4. The median value in all 3 glyphs is quite similar so we can assume that there is approximately equal distribution between the high and low population counties
-5.The outliers in the lower distribution (between 10^2 - 10^3) in estimated population distribution of both 2015 and 2019 is different from the cencus 2010.
-6. Also the outliers in lower distribution is periodically increasing with respect to time. 
-7. Boxplot can give a summarized view of the distribution.In other words, it can give an idea about the whole data. Also for more precise visualization we can use some other variants of box plot also. 
+After analysing the data i can say that covid infection and number of death increased during the winter season and gradually decrease with the summer season. and covid infection and deaths are at lowest during the summer season. so we can say that Covid cases are more prominant during the winter season then summer season.
 
 
 
 2. Is there a direct correlation between the rise in COVID-19 cases and the rise in deaths of infected individuals?
 
 ![](mainq2.png) 
----
-### eCDF    
+### Creating Visualization in Tableau 
+---   
 
--eCDF is **Empirical cumulative distribution function** 
 -It provides an alternative visualization of distribution.
 -For this visualization I used the **CENSUS2010POP** column for the distribution of the population of all counties in the US as of the 2010 Census.  
 -The **geom parameter of the stat_ecdf() function** can be used to change the shape of the ECDF plot. We can add any shape as the value of **parameter geom**. For example, we can have a **point-shaped ECDF plot** made using **stat_ecdf()** function with the geom parameter being **point**.
@@ -110,11 +101,7 @@ Now after the initial analysis and answering the questions. So final two questio
 #### Observation
 ---    
 
-1.  This graph displays the data points from lowest to highest against their percentile range.
-2. Between 10^2 to 10^3 there are many outliers and population distribution is not dense.That`s why there is so much white space between data points.
-3. The population distribution between 10^4 and 10^6 is more dense because in this area the curve is quite strong. that means there are so many data points or we can say population distribution is high in this zone. 
-4. The reason cureve is quite dense here is because I used log 10 value for the population distribution. So the distribution is compressed because of exponent of 10 scale.The curve is quite smooth as there are a lot of values that are compressed by the log10 scale. And also the main reason for using the exponential value is because the range of the values is enormous.
-5. The eCDF curve is massively change its course of motion betwen 10^4 to 10^6. which implies it is the zone of median. and majority of the population distribution is in this zone
+
 
 
 
