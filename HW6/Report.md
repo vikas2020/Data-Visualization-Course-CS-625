@@ -24,7 +24,7 @@ For the **initial exploration**, I have selected the **Coronavirus (COVID-19) Da
 
 
 ### Choose a dataset
-**Dataset Selected** :  Coronavirus (Covid-19) Data in the United States, New York Times - https://github.com/nytimes/covid-19-data.
+Dataset Selected** :  Coronavirus (Covid-19) Data in the United States, New York Times - https://github.com/nytimes/covid-19-data.
 ---    
 
 This dataset contains **1159 rows and 3 columns.** 
