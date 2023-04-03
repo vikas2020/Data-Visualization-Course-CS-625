@@ -108,7 +108,7 @@ Now after the initial analysis and answering the questions.
 #### Observation
 ---
 After analyzing the data, I can **conclude** that the number of COVID **infections and deaths increased during the winter season and gradually decreased with the summer season.** Moreover, COVID infections and deaths are at their **lowest during the summer season**. Therefore, we can say that COVID cases are **more prominent** during the **winter season** than the summer season. This finding is consistent with previous studies that have shown that **respiratory viruses** such as COVID-19 are more **prevalent during the winter months** due to factors such as **low humidity levels and cold temperatures**.
----
+
 
 
 ## 2. Is there a direct correlation between the rise in COVID-19 cases and the rise in deaths of infected individuals?    
