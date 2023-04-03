@@ -79,7 +79,7 @@ Now after the initial analysis and answering the questions. So final two questio
 - The population values are very big, so I find the **exponential values** as a solution for this problem. 
 - x and y axis are properly labelled and also different color pallets used to make visualization effective.
 
-
+![](dualaxis2.png) 
 
 #### Observation
 ---
