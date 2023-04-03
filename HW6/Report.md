@@ -56,10 +56,10 @@ Because the dataset is quite big, I converted the **date into months in Tableau*
 ![](q1.png)    
 
 **Q2. On which date was the highest number of COVID-19 cases reported in a single day?
-    On 10 january 2022, there were 1433977 covid infection cases. 
+    On 10 january 2022, there were 1433977 covid infection cases.** 
 
 **Q3. On which date was the highest number of COVID-19 deaths reported in a single day?
-    On 11 november 2022, 12718 peoples were dead due to covid 19.
+    On 11 november 2022, 12718 peoples were dead due to covid 19.**
         
 ![](max.png)    
 
