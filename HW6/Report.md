@@ -22,9 +22,8 @@ Due to the significant impact of COVID-19 on every aspect of human society, ther
 For the **initial exploration**, I have selected the **Coronavirus (COVID-19) Data in the United States from the New York Times repository (https://github.com/nytimes/covid-19-data)**. I am using this dataset to explore interesting insights and **plan to add multiple datasets to this COVID-19 data**.
 
 
-
-### Choose a dataset
-Dataset Selected** :  Coronavirus (Covid-19) Data in the United States, New York Times - https://github.com/nytimes/covid-19-data.
+## Choose a dataset
+Dataset Selected :  Coronavirus (Covid-19) Data in the United States, New York Times - https://github.com/nytimes/covid-19-data.
 ---    
 
 This dataset contains **1159 rows and 3 columns.** 
