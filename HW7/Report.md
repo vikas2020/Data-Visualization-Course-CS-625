@@ -19,38 +19,69 @@ COVID-19 has affected people’s lives in many ways, from social distancing to l
 
 Due to the significant impact of COVID-19 on every aspect of human society, there are many sectors that have been completely disrupted. As a result, COVID-19 historical data is an excellent dataset for visualizing the changes in different aspects of society.    
 
-For the **initial exploration**, I have selected the **Coronavirus (COVID-19) Data in the United States from the New York Times repository (https://github.com/nytimes/covid-19-data)**. I am using this dataset to explore interesting insights and **plan to add multiple datasets to this COVID-19 data**.
+For the **initial exploration**, I have selected the **Coronavirus (COVID-19) Data in the United States from the New York Times repository (https://github.com/nytimes/covid-19-data)**. 
+
+For the **secondary dataset**, I aim to use the commute data of the people in the United States to analyze how their commute patterns changed during the COVID-19 pandemic. However, finding the exact data that I need was challenging. After extensive searching, I decided to use the carbon dioxide emission data as a proxy for the commute data. This data can provide me with the CO2 emissions from ground and aviation transport in the US, which can reflect the changes in travel behavior and mode choice during the pandemic. The measurement used for Co2 emission is **MtCO2 per day**.    
+**MtCO2** per day is a unit of measurement for CO2 emission that stands for megatons of CO2 per day. One megaton is equal to one million metric tons, and one metric ton is equal to 1,000 kilograms. Therefore, one MtCO2 per day is equal to 1,000,000,000 kilograms of CO2 emitted per day. This unit is often used to express large-scale CO2 emissions from different sources or sectors, such as industry, transportation etc.    
+Here is the link the secondary dataset I am using in this project **Secondary dataset (https://carbonmonitor.org/)**
 
 
-## Choose a dataset
-Dataset Selected :  Coronavirus (Covid-19) Data in the United States, New York Times - https://github.com/nytimes/covid-19-data.
+## Secondary Dataset
+Dataset Selected :  Secondary dataset (https://carbonmonitor.org/)
 ---    
 
-This dataset contains **1159 rows and 3 columns.** 
-- Date ( From 21st january 2020 to 23rd january 2023 ) 
-- Cases (Total number of cases)
-- Death. (Total number of death)      
-     
-     
-![](download.png)
+This dataset contains **48181 rows and 5 columns.**
+there are 6 different sector and 
+- Domestic aviation
+- International Aviation
+- ground transport
+- Residential
+- Industry
+- Power
+  
+  ![](downloaddata.png)  
+   
+![](aviagr.png)
 
 ## Step 2: Start the EDA Process
-**Exploratory Data Analysis (EDA)** is an important step in any data analysis or data science project. EDA is the process of **investigating the dataset to discover patterns and anomalies (outliers) and form hypotheses based on our understanding of the dataset**. EDA involves generating summary statistics for numerical data in the dataset and creating various graphical representations to understand the data better. The goal of EDA is to maximize insights into a dataset.
-
-After analyzing the data, I determined that for the **initial visualization**, I needed the **total number of cases and total number of deaths per day**. To achieve this, I used a **formula in Microsoft Excel** and **added two new columns** to the main dataset
-
-- Case per date
-- Death per date
-
-**I freeze the title pane of my dataset’s first row containing the names of all columns. This way, I can still keep track of the title of my column while scrolling through the dataset**.    
+**Exploratory Data Analysis (EDA)** is an important step in any data analysis or data science project. EDA is the process of **investigating the dataset to discover patterns and anomalies (outliers) and form hypotheses based on our understanding of the dataset**. EDA involves generating summary statistics for numerical data in the dataset and creating various graphical representations to understand the data better. The goal of EDA is to maximize insights into a dataset.Exploratory data analysis (EDA) is a process of examining and summarizing data sets using various techniques such as descriptive statistics, graphical displays, and interactive tools. EDA helps to identify patterns, trends, outliers, and relationships in the data, as well as to generate hypotheses and questions for further analysis. EDA is an iterative and creative processes that require careful planning, execution, and evaluation.    
+First thing i did is **I freeze the title pane of my dataset’s first row containing the names of all columns. This way, I can still keep track of the title of my column while scrolling through the dataset**.     
+Also data is described as statewise. and I found that in US column with respect to date  is actually the total sum of all state emmission togetheer on that date.. So I used US column. For the reference  I used **January 1st 2020 date**  to show this analysis.
+ 
+ 
+![](addition.png)  
 
 
-![](maindata.png)
+ After analyzing the data, I determined that for the **visualization**, 
+ Also I took my maindata file from HW6 containing data of covid cases and death case and added these carbon emission data with them for the corerelation and visualization.     
+ 
+ ![](allin.png)     
+ 
+  We need 4 sector for this visualization.   
+- Domestic aviation
+- ground transport
+- Residential
+- Industry    
+
+ So I filtered these 4 sector from the dataset in two different csv files.
+ - CO2 emission with resident and industrial sector 
+
+![](resind.png)     
+
+- CO2 emission from AViation and ground transport sector   
+![](aviagr.png)
+     
+
+
+- Date ( From 1st january 2020 to 31st december 2021 ) 
+- Domestic Aviation CO2 emmission per day. - we are using domestic aviation because international avaiation does not correlate with USA ground transport data.
+- Ground transport CO2emmission per day      
+
 
 Now the first question that comes to mind is:     
 
 
-**Q1. What are the total number of cases and total number of deaths?**    
+**Q1. On which date carbon emission is maximum in ?**    
 
    Total case till March 2023 = 103,910,034    
    
@@ -82,7 +113,7 @@ Now after the initial analysis and answering the questions.
     
 ### Final two questions are 
 
-## 1. Does the incidence of COVID-19 infections vary with different seasons?         
+## 1. How did the CO2 emissions from aviation and ground transport travel change in the US during the COVID-19 pandemic? **
 
 
 ![](mainq1.png) 
@@ -111,7 +142,7 @@ After analyzing the data, I can **conclude** that the number of COVID **infectio
 
 
 
-## 2. Is there a direct correlation between the rise in COVID-19 cases and the rise in deaths of infected individuals?    
+## 2. How did the COVID-19 pandemic affect the CO2 emissions from industry and residential sectors in the US??    
 
 
 ![](mainq2.png) 
