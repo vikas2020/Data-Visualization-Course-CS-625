@@ -30,8 +30,9 @@ Here is the link the secondary dataset I am using in this project **Secondary da
 Dataset Selected :  Secondary dataset (https://carbonmonitor.org/)
 ---    
 
-This dataset contains **48181 rows and 5 columns.**
-there are 6 different sector and 
+This dataset contains **48181 rows and 4 columns.**     
+
+There are 6 different sector in the dataset. 
 - Domestic aviation
 - International Aviation
 - ground transport
@@ -41,7 +42,7 @@ there are 6 different sector and
   
   ![](downloaddata.png)  
    
-![](aviagr.png)
+
 
 ## Step 2: Start the EDA Process
 **Exploratory Data Analysis (EDA)** is an important step in any data analysis or data science project. EDA is the process of **investigating the dataset to discover patterns and anomalies (outliers) and form hypotheses based on our understanding of the dataset**. EDA involves generating summary statistics for numerical data in the dataset and creating various graphical representations to understand the data better. The goal of EDA is to maximize insights into a dataset.Exploratory data analysis (EDA) is a process of examining and summarizing data sets using various techniques such as descriptive statistics, graphical displays, and interactive tools. EDA helps to identify patterns, trends, outliers, and relationships in the data, as well as to generate hypotheses and questions for further analysis. EDA is an iterative and creative processes that require careful planning, execution, and evaluation.    
@@ -49,128 +50,132 @@ First thing i did is **I freeze the title pane of my dataset’s first row conta
 Also data is described as statewise. and I found that in US column with respect to date  is actually the total sum of all state emmission togetheer on that date.. So I used US column. For the reference  I used **January 1st 2020 date**  to show this analysis.
  
  
-![](addition.png)  
+![](addition.png)        
+
 
 
  After analyzing the data, I determined that for the **visualization**, 
- Also I took my maindata file from HW6 containing data of covid cases and death case and added these carbon emission data with them for the corerelation and visualization.     
+ Also I took my maindata file from HW6 containing data of covid cases and death case and added these carbon emission data with them for the corerelation and visualization.         
  
- ![](allin.png)     
+ 
+ ![](allin.png)          
+ 
  
   We need 4 sector for this visualization.   
 - Domestic aviation
 - ground transport
 - Residential
 - Industry    
-
+     
+     
  So I filtered these 4 sector from the dataset in two different csv files.
- - CO2 emission with resident and industrial sector 
+ - CO2 emission with resident and industrial sector      
+  
 
-![](resind.png)     
+![](resind.png)            
 
-- CO2 emission from AViation and ground transport sector   
-![](aviagr.png)
+
+- CO2 emission from AViation and ground transport sector          
+
+![](aviagr.png)       
+
      
 
 
 - Date ( From 1st january 2020 to 31st december 2021 ) 
 - Domestic Aviation CO2 emmission per day. - we are using domestic aviation because international avaiation does not correlate with USA ground transport data.
-- Ground transport CO2emmission per day      
+- Ground transport CO2emmission per day            
+
 
 
 Now the first question that comes to mind is:     
 
 
-**Q1. On which date carbon emission is maximum in ?**    
+**Q1. On which month carbon emission is maximum in aviation and ground transport sector ?**    
 
-   Total case till March 2023 = 103,910,034    
-   
-   Total Covid deaths till march 2023 = 1,128,090
+
+   Month with maximum  Emission for ground transport sector is August 2021 = 140.51 MTCO2 / day      
+   Month with maximum  Emission for Aviation sector is December 2021 = 15.139 MTCO2 / day 
 
 Because the dataset is quite big, I converted the **date into months in Tableau** for better visualization.    
-
-
-![](q1.png)     
+       
+ **Q2. On which month carbon emission is minimum in aviation and ground transport sector ?**       
+ 
+   
+   Month with minimum  Emission for ground transport is April 2020 = 94.24 MTCO2 / day     
+    
+   Month with minimum  Emission for Aviation sector is April 2020 = 5.548 MTCO2 / day      
+    
+![](minmxavgr.png)     
 
         
         
-### Q2. On which date was the highest number of COVID-19 cases reported in a single day?  
+### Q3. Is there any month when industrial carbon emission is less than residential emission?
 
-    On 10 january 2022, there were 1433977 covid infection cases.
+   Yes, In february month residential carbon emission is more than industrial emission.
 
-**Q3. On which date was the highest number of COVID-19 deaths reported in a single day?**     
 
-    On 11 november 2022, 12718 peoples were dead due to covid 19.
-    
-    
-![](max.png)    
-    
-    
-While analyzing the dataset, I **found some negative values** such as -2435 which **appear to be mistakes in the dataset**. these errors are visible in the negative side of X axis in the visualization. Upon further investigation, I found that there were **errors in four rows**, specifically rows 502, 785, 993, and 1148.
-
-Now after the initial analysis and answering the questions.
     
     
 ### Final two questions are 
 
-## 1. How did the CO2 emissions from aviation and ground transport travel change in the US during the COVID-19 pandemic? **
+## 1. Is there a change in  CO2 emission from way of commute (aviation and ground transport ) in US during the COVID-19 pandemic? **
 
 
-![](mainq1.png) 
+![](avgr1.png) 
 
  
 ### Creating Visualization in Tableau 
 ---    
 - Downloaded the **maindata.csv** file for visualization purposes.
 - Converted the **date into months** to improve visualization.
-- **Summarized the date into months** in the visualization to obtain the total number of cases and deaths of the complete dataset in a **specific month**.
+- **Summarized the date into months** in the visualization to obtain the total number of emission by aviation sector and ground transport sector of complete dataset in a **specific month**.
 - Annotated the marks with the highest and lowest value and matched the annotation color with the charts.
 - Used **dual axis** for better visualization and repeated the steps done before.
-- Used **line charts** for total death per month.
-- Used **bar charts** for total cases per month.
+- Used **line charts** for Aviation emission / month.
+- Used **bar charts** for Ground transport emission / month.
 - Annotated the **marks** with matching color of the chart.
 - Labeled the **X and Y axis**.
 - Wrote a **title and subtitle** for the visualization.
+- Used **circle to define total covid cases per month**
+- Used size in mark circle to define Covid Death per month
     
     
-![](dualaxis2.png) 
+![](dualavgr.png) 
     
     
 #### Observation
 ---
-After analyzing the data, I can **conclude** that the number of COVID **infections and deaths increased during the winter season and gradually decreased with the summer season.** Moreover, COVID infections and deaths are at their **lowest during the summer season**. Therefore, we can say that COVID cases are **more prominent** during the **winter season** than the summer season. This finding is consistent with previous studies that have shown that **respiratory viruses** such as COVID-19 are more **prevalent during the winter months** due to factors such as **low humidity levels and cold temperatures**.
+Based on the data analysis, I can infer that the CO2 emissions from aviation and ground transport decreased significantly during the first wave of the COVID-19 pandemic. The ground transport emissions started to recover gradually, but the aviation emissions remained low compared to the ground transport emissions. A possible explanation for this pattern is that people were afraid of getting infected by the virus, so they avoided traveling by air where the risk of exposure was higher than traveling by personal car. Therefore, the domestic aviation CO2 emissions were low for several months. However, after the second wave of the pandemic in January 2021, both sectors experienced another drop in emissions, followed by a quick rebound in the next two months. This could be attributed to the increased vaccination rates and reduced fear among people, which encouraged them to resume their travel activities.
 
 
+## 2. Is there a correlation between change in carbon emission from industry and residential sectors  during covid 19 in the US?   
 
-## 2. How did the COVID-19 pandemic affect the CO2 emissions from industry and residential sectors in the US??    
 
-
-![](mainq2.png) 
+![](Indnodual.png) 
 
 ### Creating Visualization in Tableau 
 ---   
 
-- Downloaded the **maindata.csv** file for visualization purposes.
+- Downloaded the **resind.csv** file for visualization purposes.
 - Converted the **date into months** to improve visualization.
 - Used **months** data on the **x-axis** to make visualization feasible because date data is very large.
-- Used **bar charts to visualize cases per month** from 2020 to 2023.
-- Used bar charts to visualize **COVID deaths per month** from 2020 to 2023.
-- **Annotated** the marks with the highest COVID cases and the correlated COVID deaths in that area.
-- Annotated the highest COVID death and the correlated COVID cases in that area.
-- Used **color to differentiate different years** within the charts.
-- Defined the **legends (Year of date)**.
-- Used **dual axis** for better visualization and repeated the steps done before.
-- Used **line charts** for total death per month.
-- Used **bar charts** for total cases per month.
-- Annotated the **marks** with matching color of the chart.
+- Used **bar charts to visualize Residential emission** from Jan 2020 to  Dec 2021.
+- Used **bar charts to visualize Industrial emission** from Jan 2020 to  Dec 2021.
+- **Annotated** the marks with the month with maximum emission in both sector (residential and industrial). 
+- **Annotated** the marks with the month with minimum emission in both sector (residential and industrial).
+- Defined the **legends ( Sector)**.
+- Now in Second chart used **dual axis** for better visualization and repeated the steps done before.
+- Used **line charts** for emission in industrial sector.
+- Used **bar charts** for emission in residential sector.
 - Labeled the **X and Y axis**.
-- Wrote a **title and subtitle** for the visualization.
+- Wrote a **title ** for the visualization.
+- Defined the **legends (Emission Sector)**.
 
-![](dualaxis.png) 
+![](inddual.png) 
 #### Observation
 ---  
-
-As we can see in the visualization that in **january, 2021  covid cases were 6,196,874 and covid deaths were 95,249.** but in **january 2022 covid cases were increases to 20,300,128** but the **covid deaths reduced to 61,607**. This can be because **people developed immunity following covid 19 vaccine or natural infection**. So We can assume that **there is no direct correlation** between the rise in COVID-19 cases and the rise in deaths of infected individuals. While there is a correlation between the two, it is **not a direct one**. The severity of COVID-19 cases can **vary greatly**, and some people may experience mild symptoms while others may experience severe symptoms that can lead to death. Additionally, there are **many factors that can contribute to the severity of COVID-19 cases, including age, underlying health conditions, and access to healthcare**. A person can develop immunity from COVID-19 following vaccination, natural infection, or a combination of both. **The immune system produces antibodies in response to the SARS-CoV-2 virus or COVID-19 vaccines**. A new report shows that 90% of people who recover from COVID-19 infections keep a stable overall antibody response.
+The visualization shows that the CO2 emissions from industries decreased slightly during the first wave of the COVID-19 pandemic, but remained relatively stable throughout the period. However, the CO2 emissions from residential sector declined sharply during the first wave, and then increased again in the following months. This pattern may seem counterintuitive, as one would expect more residential emissions when people stay at home due to the pandemic. However, I found that COVID-19 is not the only factor affecting residential emissions. Another important factor is the weather and the seasonal cycle. Residential CO2 emissions are higher in winter than in summer, because of the higher demand for heating and electricity. The CO2 emissions also depend on the type of fuel used for electricity generation, such as coal, natural gas, or renewables. Moreover, residential CO2 emissions are influenced by the plant growth and decay cycle, as plants absorb CO2 from the atmosphere in summer and release it back in winter. Therefore, residential CO2 emissions vary with the seasons and the climate conditions. Thus, we cannot attribute the decline in residential emissions solely to COVID-19.
 
 
 
@@ -182,7 +187,7 @@ As we can see in the visualization that in **january, 2021  covid cases were 6,1
 -   [3](https://www.cdc.gov/)
 -   [4](https://www.who.int/health-topics/coronavirus#tab=tab_1)
 -   [5](https://www.youtube.com/shorts/VzYdVbFT3aY)
--   [6](https://data.virginia.gov/dataset/VDH-COVID-19-PublicUseDataset-Cases-by-Vaccination/vsrk-d6hx)
+-   [6](https://carbonmonitor.org/)
 -   [7](https://www.youtube.com/shorts/VzYdVbFT3aY)
 -   [8](https://www.theguardian.com/world/2022/jun/14/people-who-caught-covid-in-first-wave-get-no-immune-boost-from-omicron)
 -   [9](https://help.tableau.com/current/online/en-us/web_author.htm?source=productlink)
