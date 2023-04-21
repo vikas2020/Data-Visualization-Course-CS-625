@@ -1,6 +1,6 @@
 HW 8  Project - Implement Final Chart
 ================
-Vikas Chhillar 
+Vikas Chhillar  
 
 CS 625, Spring 2023
 
