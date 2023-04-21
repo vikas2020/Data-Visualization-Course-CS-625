@@ -79,17 +79,18 @@ To create the visualization, I analyzed the data and found that I can merge this
  
  ![](allin.png)    
  
- ### image of your selected draft chart from HW7           
+ ### Image of your selected draft chart from HW7           
 
-![](dualavgr.png)   
+![](dualavgr.png)      
 
-## Final question from HW7 that will be addressing  
+
+
+### Final question from HW7 that will be addressing  
 
 
 **COVID-19 and CO2 Emissions: A Comparative Analysis of Aviation and Ground Transportation in the US**    
 
 
-![](dualavgr.png) 
 
  
 ### Refining the draft chart. 
@@ -105,10 +106,10 @@ To create the visualization, I analyzed the data and found that I can merge this
 
 ##  visualization principles    
 - One of the basic principles is to be clear on our purpose. What do we want to show the audience? Here I wanted to show the relationship for both ground transportation / aviation and COVID-19 cases / deaths.
-Data cleaning is needed for some datasets to show the exploratory data analysis.
-Choosing the right graph, we should have a clear idea on idioms which idiom is appropriate for what analysis. I have used the scatter plot and line chart to show the relationship.
-Make sure where the audience focuses their attention, one is the title should attract and the other is the colors that we are using to display the graph.
-Don’t make the graphs too complex with different designs and patterns.
+- Data cleaning is needed for some datasets to show the exploratory data analysis.
+- Choosing the right graph, we should have a clear idea on idioms which idiom is appropriate for what analysis. I have used the scatter plot and line chart to show the relationship.
+- Make sure where the audience focuses their attention, one is the title should attract and the other is the colors that we are using to display the graph.
+- Don’t make the graphs too complex with different designs and patterns.
 
 ## Headline fits the chart     
 
