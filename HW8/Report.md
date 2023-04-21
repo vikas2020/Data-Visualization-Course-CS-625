@@ -13,9 +13,8 @@ The COVID-19 pandemic has had a profound impact on the transportation sector in 
 For this Assignment, I used **Tableau online** for creating visualization.
 and **excel software** for viewing and filtering, sorted the data.
 
-## STEP 1.
 
-###  Brief description of your chosen datasets
+##  Brief description of your chosen datasets
 
 #### Main Dataset
 
@@ -36,7 +35,7 @@ While analyzing the dataset, I found some negative values such as -2435 which ap
           
 ![](maindata.png)
 
-#### Secondary Dataset
+## Secondary Dataset
 
 For the **secondary dataset**, I aim to use the commute data of the people in the United States to analyze how their commute patterns changed during the COVID-19 pandemic. However, finding the exact data that I need was challenging. After extensive searching, I decided to use the carbon dioxide emission data as a proxy for the commute data. This data can provide me with the CO2 emissions from ground and aviation transport in the US, which can reflect the changes in travel behavior and mode choice during the pandemic. The measurement used for Co2 emission is **MtCO2 per day**.    
 **MtCO2** per day is a unit of measurement for CO2 emission that stands for megatons of CO2 per day. One megaton is equal to one million metric tons, and one metric ton is equal to 1,000 kilograms. Therefore, one MtCO2 per day is equal to 1,000,000,000 kilograms of CO2 emitted per day. This unit is often used to express large-scale CO2 emissions from different sources or sectors, such as industry, transportation etc.    
@@ -85,7 +84,7 @@ To create the visualization, I analyzed the data and found that I can merge this
 
 
 
-### Final question from HW7 that will be addressing  
+## Final question from HW7 that will be addressing  
 
 
 **COVID-19 and CO2 Emissions: A Comparative Analysis of Aviation and Ground Transportation in the US**    
@@ -93,7 +92,7 @@ To create the visualization, I analyzed the data and found that I can merge this
 
 
  
-### Refining the draft chart. 
+## Refining the draft chart. 
 
 - I conducted multiple correlation analyses between ground transportation / aviation transportation and COVID-19 cases / COVID-19 deaths.
 - I used insights from both the COVID-19 dataset and the carbon emission dataset for this visualization.
@@ -140,7 +139,7 @@ The line chart is another idiom that I used to visualize the data. The line char
     
     
 
-### Image of  refined chart
+## Image of  refined chart
 
 
 ![](finalee.png) 
@@ -152,7 +151,7 @@ The data analysis reveals that the CO2 emissions from aviation and ground transp
 
     
     
-#### Final thought
+## Final thought
 
 For this report, I spent less time than the first two assignments related to this project, as the first two assignments involved a lot of thinking about what kind of data exploration to do. The EDA process really helped a lot in selecting the appropriate datasets and in examining each chart individually and together, which really gave me some good insight into the data I was working with. I had to revise some parts of the previous two assignments as some of the datasets were not adequate or did not have the data features that I wanted and because of this, this process really helped me become a more proficient data detective. This project work gave me a valuable opportunity to delve into EDA and understand more complex data analysis.
 
