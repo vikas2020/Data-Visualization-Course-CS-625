@@ -103,6 +103,17 @@ To create the visualization, I analyzed the data and found that I can merge this
 - I used shape to highlight the change in COVID-19 deaths over time to make it easy to see the increase in the death rate during COVID-19.
 - I labelled the axes and started them with 0 and the values on the axes are evenly distributed.
 
+##  visualization principles    
+- One of the basic principles is to be clear on our purpose. What do we want to show the audience? Here I wanted to show the relationship for both ground transportation / aviation and COVID-19 cases / deaths.
+Data cleaning is needed for some datasets to show the exploratory data analysis.
+Choosing the right graph, we should have a clear idea on idioms which idiom is appropriate for what analysis. I have used the scatter plot and line chart to show the relationship.
+Make sure where the audience focuses their attention, one is the title should attract and the other is the colors that we are using to display the graph.
+Don’t make the graphs too complex with different designs and patterns.
+
+## Headline fits the chart     
+
+**COVID-19 and CO2 Emissions: A Comparative Analysis of Aviation and Ground Transportation in the US**
+I have given this headline because I think this line will justify the visualization and it can create curiosity among viewers to learn more about this dataset and the visualization.
 
 
 ## Idiom used is scatterplot and linechart
@@ -128,11 +139,12 @@ The line chart is another idiom that I used to visualize the data. The line char
     
     
 
-### image of your refined chart
+### Image of  refined chart
 
 
-![](finale.png) 
+![](finalee.png) 
 
+## Explanation of how your final chart answers the question you asked in HW7:     
 
 The data analysis reveals that the CO2 emissions from aviation and ground transport experienced a significant decline during the first wave of the COVID-19 pandemic. The ground transport emissions began to recover gradually, but the aviation emissions stayed low compared to the ground transport emissions. A plausible explanation for this pattern is that people were concerned about getting infected by the virus, so they refrained from traveling by air where the risk of exposure was higher than traveling by personal car. As a result, the domestic aviation CO2 emissions were low for several months. However, after the second wave of the pandemic in January 2021, both sectors witnessed another drop in emissions, followed by a rapid rebound in the next two months. This could be attributed to the increased vaccination rates and reduced fear among people, which motivated them to resume their travel activities.
 
