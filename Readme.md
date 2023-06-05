@@ -1,1 +1,1 @@
-#### This is the repository for Homeworks for CS 625 Spring 2023
+#### This is the repository for data visualization course for CS 625 Spring 2023
